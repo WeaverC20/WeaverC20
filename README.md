@@ -11,7 +11,7 @@ This animation shows my GitHub contributions as a **gas-phase diffusion simulati
 Each “molecule” starts on the left and undergoes a random walk—bouncing, permeating, and drifting across the lattice—just like a hydrogen or deuterium atom moving through a material.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/WeaverC20/WeaverC20/main/output/diffusion.svg" width="100%">
+  <img src="https://raw.githubusercontent.com/WeaverC20/WeaverC20/main/output/diffusion.svg?cache=1" width="100%">
 </p>
 
 ---
