@@ -150,16 +150,32 @@ function buildAnimatedSVG(grid, sim, opts) {
   const width  = cols * (cellSize + cellGap) + cellGap;
   const height = rows * (cellSize + cellGap) + cellGap;
 
-  // precompute frame position strings for each particle
   const nParticles = frames[0].length;
-  const particleKeyframes = Array.from({ length: nParticles }, (_, i) =>
-    frames.map(f => {
-      const p = f[i];
-      const px = cellGap + p.x * (cellSize + cellGap);
-      const py = cellGap + p.y * (cellSize + cellGap);
-      return `${px.toFixed(2)},${py.toFixed(2)}`;
-    })
-  );
+
+  // Convert cell-space positions to pixel-space
+  function toPx(p) {
+    return {
+      x: cellGap + p.x * (cellSize + cellGap),
+      y: cellGap + p.y * (cellSize + cellGap),
+    };
+  }
+
+  // Build CSS keyframes for each particle
+  const keyframesCSS = [];
+  for (let i = 0; i < nParticles; i++) {
+    const kf = [];
+    for (let t = 0; t < frames.length; t++) {
+      const pct = (t / (frames.length - 1)) * 100;
+      const p = toPx(frames[t][i]);
+      kf.push(`${pct.toFixed(2)}% { transform: translate(${p.x.toFixed(2)}px, ${p.y.toFixed(2)}px); }`);
+    }
+    keyframesCSS.push(`
+      @keyframes mol-${i} {
+        ${kf.join("\n")}
+      }
+      .mol-${i} { animation: mol-${i} ${durationSec}s linear infinite; }
+    `);
+  }
 
   const svgParts = [];
 
@@ -168,7 +184,8 @@ function buildAnimatedSVG(grid, sim, opts) {
   <defs>
     <style>
       .cell { rx:2; ry:2; }
-      .mol  { fill:${particleColor}; opacity:${particleOpacity}; }
+      .mol { fill:${particleColor}; opacity:${particleOpacity}; }
+      ${keyframesCSS.join("\n")}
     </style>
   </defs>
 
@@ -189,18 +206,13 @@ function buildAnimatedSVG(grid, sim, opts) {
 
   svgParts.push("\n  <!-- molecules -->");
 
-  // particles as circles with animateMotion-like keyframes via <animate>
+  const rPx = (cellSize * 0.28).toFixed(2);
   for (let i = 0; i < nParticles; i++) {
-    const pts = particleKeyframes[i];
-    const values = pts.join(";");
-
+    // circles start at (0,0) inside a translated group
     svgParts.push(
-`  <circle class="mol" r="${(cellSize*0.28).toFixed(2)}">
-    <animate attributeName="cx" dur="${durationSec}s" repeatCount="indefinite"
-      values="${pts.map(v => v.split(",")[0]).join(";")}" keyTimes="${pts.map((_,k)=> (k/(pts.length-1)).toFixed(4)).join(";")}" />
-    <animate attributeName="cy" dur="${durationSec}s" repeatCount="indefinite"
-      values="${pts.map(v => v.split(",")[1]).join(";")}" keyTimes="${pts.map((_,k)=> (k/(pts.length-1)).toFixed(4)).join(";")}" />
-  </circle>`
+`  <g class="mol mol-${i}">
+      <circle cx="0" cy="0" r="${rPx}"></circle>
+  </g>`
     );
   }
 
