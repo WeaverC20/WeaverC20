@@ -9,11 +9,6 @@ on:
     - cron: "0 6 * * *"
   workflow_dispatch:
 
-# on:
-#   schedule:
-#     - cron: "0 6 * * *"   # daily at 06:00 UTC
-#   workflow_dispatch:
-
 permissions:
   contents: write
 
@@ -30,16 +25,27 @@ jobs:
       - name: Install deps
         run: npm install --ignore-scripts
 
+      # Step 1: Install ImageMagick, which provides the 'convert' tool for GIF generation
+      - name: Install ImageMagick for GIF conversion
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
       - name: Generate SVG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: ${{ github.repository_owner }}
         run: npm run generate
 
+      # Step 2: Convert the Animated SVG to a GIF
+      # Note: ImageMagick's SMIL support can be inconsistent, but this is the standard
+      # command to attempt the conversion, looping indefinitely with a short delay.
+      - name: Convert Animated SVG to GIF
+        run: convert -delay 5 -loop 0 output/diffusion.svg output/diffusion.gif
+
       - name: Commit & push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/diffusion.svg
-          git commit -m "update diffusion svg" || echo "no changes"
+          # Commit both the SVG and the newly created GIF
+          git add output/diffusion.svg output/diffusion.gif
+          git commit -m "update diffusion assets" || echo "no changes"
           git push
