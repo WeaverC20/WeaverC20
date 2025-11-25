@@ -1,4 +1,3 @@
-// scripts/generate-diffusion.mjs
 import fs from "node:fs";
 import path from "node:path";
 
@@ -10,6 +9,7 @@ if (!TOKEN) throw new Error("Missing GITHUB_TOKEN");
 
 const GRAPHQL = "https://api.github.com/graphql";
 
+// Fetches the contribution grid from GitHub's GraphQL API
 async function fetchContribGrid() {
   const query = `
     query($login:String!) {
@@ -45,14 +45,15 @@ async function fetchContribGrid() {
   return weeks.map(w => w.contributionDays.map(d => d.contributionCount));
 }
 
+// Uses Box-Muller transform for small Gaussian noise
 function randnBoxMuller() {
-  // small gaussian noise for nicer motion
   let u = 0, v = 0;
   while (u === 0) u = Math.random();
   while (v === 0) v = Math.random();
   return Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
 }
 
+// Simulates particle movement for all steps
 function simulateParticles(grid, opts) {
   const {
     steps = 120,          // frames
@@ -128,6 +129,7 @@ function simulateParticles(grid, opts) {
   return { frames, cols, rows };
 }
 
+// Determines the color based on contribution count
 function colorForCount(count) {
   // GitHub-like 5-level shading
   if (count === 0) return "#ebedf0";
@@ -137,21 +139,17 @@ function colorForCount(count) {
   return "#216e39";
 }
 
-function buildAnimatedSVG(grid, sim, opts) {
+// NEW FUNCTION: Builds a single, static SVG for a given frame
+function buildFrameSVG(grid, frame, cols, rows, opts) {
   const {
     cellSize = 12,
     cellGap = 2,
-    durationSec = 3.0,
     particleColor = "#58a6ff",
     particleOpacity = 0.9,
   } = opts;
 
-  const { frames, cols, rows } = sim;
   const width  = cols * (cellSize + cellGap) + cellGap;
   const height = rows * (cellSize + cellGap) + cellGap;
-
-  const nParticles = frames[0].length;
-  const nFrames = frames.length;
 
   function toPx(p) {
     return {
@@ -159,12 +157,9 @@ function buildAnimatedSVG(grid, sim, opts) {
       y: cellGap + p.y * (cellSize + cellGap),
     };
   }
-
-  const keyTimes = Array.from({ length: nFrames }, (_, t) =>
-    (t / (nFrames - 1)).toFixed(4)
-  ).join(";");
-
+  
   const svgParts = [];
+  const rPx = (cellSize * 0.28).toFixed(2);
 
   svgParts.push(
 `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
@@ -191,36 +186,11 @@ function buildAnimatedSVG(grid, sim, opts) {
 
   svgParts.push("\n  <!-- molecules -->");
 
-  const rPx = (cellSize * 0.28).toFixed(2);
-
-  for (let i = 0; i < nParticles; i++) {
-    const xValues = [];
-    const yValues = [];
-
-    for (let t = 0; t < nFrames; t++) {
-      const p = toPx(frames[t][i]);
-      xValues.push(p.x.toFixed(2));
-      yValues.push(p.y.toFixed(2));
-    }
-
-    const xValuesStr = xValues.join(";");
-    const yValuesStr = yValues.join(";");
-
+  // particles for this specific frame
+  for (const p of frame) {
+    const { x: cx, y: cy } = toPx(p);
     svgParts.push(
-`  <circle r="${rPx}" fill="${particleColor}" fill-opacity="${particleOpacity}">
-      <animate attributeName="cx"
-               values="${xValuesStr}"
-               keyTimes="${keyTimes}"
-               dur="${durationSec}s"
-               repeatCount="indefinite"
-               calcMode="linear" />
-      <animate attributeName="cy"
-               values="${yValuesStr}"
-               keyTimes="${keyTimes}"
-               dur="${durationSec}s"
-               repeatCount="indefinite"
-               calcMode="linear" />
-  </circle>`
+`  <circle r="${rPx}" cx="${cx.toFixed(2)}" cy="${cy.toFixed(2)}" fill="${particleColor}" fill-opacity="${particleOpacity}"/>`
     );
   }
 
@@ -228,26 +198,39 @@ function buildAnimatedSVG(grid, sim, opts) {
   return svgParts.join("\n");
 }
 
+
 async function main() {
   const grid = await fetchContribGrid();
 
   const sim = simulateParticles(grid, {
-    steps: 120,
+    steps: 120, // 120 frames
     biasRight: 0.05,
     jitter: 0.22,
     radius: 0.28,
     maxPerCell: 3,
   });
 
-  const svg = buildAnimatedSVG(grid, sim, {
-    durationSec: 3.2,  // tweak 2.0–5.0
-  });
-
   const outDir = path.resolve("output");
-  fs.mkdirSync(outDir, { recursive: true });
-  fs.writeFileSync(path.join(outDir, "diffusion.svg"), svg, "utf8");
+  const framesDir = path.join(outDir, "frames");
 
-  console.log(`wrote output/diffusion.svg with ${sim.frames[0].length} particles`);
+  // Clean and create directories
+  fs.rmSync(framesDir, { recursive: true, force: true });
+  fs.mkdirSync(framesDir, { recursive: true });
+
+  // Generate and save individual static SVG frames
+  for (let t = 0; t < sim.frames.length; t++) {
+    const frameData = sim.frames[t];
+    const frameSvg = buildFrameSVG(grid, frameData, sim.cols, sim.rows, {});
+    const frameFilename = `frame-${String(t).padStart(3, '0')}.svg`;
+    fs.writeFileSync(path.join(framesDir, frameFilename), frameSvg, "utf8");
+  }
+
+  // Create a static SVG for the first frame for a static fallback/preview
+  const firstFrameSvg = buildFrameSVG(grid, sim.frames[0], sim.cols, sim.rows, {});
+  fs.writeFileSync(path.join(outDir, "diffusion.svg"), firstFrameSvg, "utf8");
+  
+  console.log(`Wrote ${sim.frames.length} static SVG frames to output/frames/`);
+  console.log(`Wrote static initial frame to output/diffusion.svg`);
 }
 
 main().catch(e => {
