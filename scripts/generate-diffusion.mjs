@@ -141,7 +141,7 @@ function buildAnimatedSVG(grid, sim, opts) {
   const {
     cellSize = 12,
     cellGap = 2,
-    durationSec = 3.0, // 2–5s target
+    durationSec = 3.0,
     particleColor = "#58a6ff",
     particleOpacity = 0.9,
   } = opts;
@@ -151,8 +151,8 @@ function buildAnimatedSVG(grid, sim, opts) {
   const height = rows * (cellSize + cellGap) + cellGap;
 
   const nParticles = frames[0].length;
+  const nFrames = frames.length;
 
-  // Convert cell-space positions to pixel-space
   function toPx(p) {
     return {
       x: cellGap + p.x * (cellSize + cellGap),
@@ -160,22 +160,9 @@ function buildAnimatedSVG(grid, sim, opts) {
     };
   }
 
-  // Build CSS keyframes for each particle
-  const keyframesCSS = [];
-  for (let i = 0; i < nParticles; i++) {
-    const kf = [];
-    for (let t = 0; t < frames.length; t++) {
-      const pct = (t / (frames.length - 1)) * 100;
-      const p = toPx(frames[t][i]);
-      kf.push(`${pct.toFixed(2)}% { transform: translate(${p.x.toFixed(2)}px, ${p.y.toFixed(2)}px); }`);
-    }
-    keyframesCSS.push(`
-      @keyframes mol-${i} {
-        ${kf.join("\n")}
-      }
-      .mol-${i} { animation: mol-${i} ${durationSec}s linear infinite; }
-    `);
-  }
+  const keyTimes = Array.from({ length: nFrames }, (_, t) =>
+    (t / (nFrames - 1)).toFixed(4)
+  ).join(";");
 
   const svgParts = [];
 
@@ -184,15 +171,13 @@ function buildAnimatedSVG(grid, sim, opts) {
   <defs>
     <style>
       .cell { rx:2; ry:2; }
-      .mol { fill:${particleColor}; opacity:${particleOpacity}; }
-      ${keyframesCSS.join("\n")}
     </style>
   </defs>
 
   <!-- contribution lattice -->`
   );
 
-  // draw grid
+  // grid
   for (let c = 0; c < cols; c++) {
     for (let r = 0; r < rows; r++) {
       const count = grid[c][r];
@@ -207,12 +192,35 @@ function buildAnimatedSVG(grid, sim, opts) {
   svgParts.push("\n  <!-- molecules -->");
 
   const rPx = (cellSize * 0.28).toFixed(2);
+
   for (let i = 0; i < nParticles; i++) {
-    // circles start at (0,0) inside a translated group
+    const xValues = [];
+    const yValues = [];
+
+    for (let t = 0; t < nFrames; t++) {
+      const p = toPx(frames[t][i]);
+      xValues.push(p.x.toFixed(2));
+      yValues.push(p.y.toFixed(2));
+    }
+
+    const xValuesStr = xValues.join(";");
+    const yValuesStr = yValues.join(";");
+
     svgParts.push(
-`  <g class="mol mol-${i}">
-      <circle cx="0" cy="0" r="${rPx}"></circle>
-  </g>`
+`  <circle r="${rPx}" fill="${particleColor}" fill-opacity="${particleOpacity}">
+      <animate attributeName="cx"
+               values="${xValuesStr}"
+               keyTimes="${keyTimes}"
+               dur="${durationSec}s"
+               repeatCount="indefinite"
+               calcMode="linear" />
+      <animate attributeName="cy"
+               values="${yValuesStr}"
+               keyTimes="${keyTimes}"
+               dur="${durationSec}s"
+               repeatCount="indefinite"
+               calcMode="linear" />
+  </circle>`
     );
   }
 
