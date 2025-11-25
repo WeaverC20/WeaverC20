@@ -1,6 +1,6 @@
 <!-- Intro Header -->
 
-<h1 align="center">Hi, I'm Colin </h1>
+<h1 align="center">Hi,, I'm Colin </h1>
 <p align="center">
 Graduate Researcher • Fusion Materials • Hydrogen/Tritium Permeation • ML for Materials • Sensor Systems
 </p>
