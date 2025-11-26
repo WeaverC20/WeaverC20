@@ -169,16 +169,15 @@ def generate_svg(weeks):
             rect = f"""
             <rect width="{RECT_SIZE}" height="{RECT_SIZE}" rx="2" fill="{color}" class="box"
                 style="
-                    transform: translate({initial_x_px}px, {initial_y_px}px); /* Initial position set here */
+                    /* REMOVED: transform: translate(...) */ 
                     animation-name: {keyframe_name};
                     animation-duration: {animation_duration}s;
                     animation-delay: {delay}s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear; /* Linear timing gives steady movement between hops */
+                    animation-timing-function: linear;
                 "
             />
             """
-            rects.append(rect)
 
     combined_css = "\n".join(css_keyframes)
     full_css_style = f"<style>.box {{ animation-timing-function: linear; animation-fill-mode: forwards; }} {combined_css}</style>"
