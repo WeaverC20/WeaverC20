@@ -1,0 +1,513 @@
+
+    <svg width="850" height="200" viewBox="0 0 850 200" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="#0d1117" rx="6" />
+        
+    <style>
+        .box { animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1); animation-fill-mode: forwards; }
+        @keyframes diffuse {
+            0% { transform: translate(-800px, var(--rand-y)); opacity: 0; }
+            20% { opacity: 1; }
+            50% { transform: translate(var(--mid-x), var(--mid-y)); }
+            100% { transform: translate(0, 0); }
+        }
+    </style>
+    
+        <g>
+            <rect x="24" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -60px;
+                    --mid-y: 76px;
+                    --rand-y: 32px;
+                    animation-name: diffuse;
+                    animation-duration: 2.002082911182516s;
+                    animation-delay: 0.6047945181975677s;
+                "
+            />
+            
+            <rect x="178" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -42px;
+                    --mid-y: -22px;
+                    --rand-y: -4px;
+                    animation-name: diffuse;
+                    animation-duration: 3.6218476482623188s;
+                    animation-delay: 1.0265600350365398s;
+                "
+            />
+            
+            <rect x="206" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -26px;
+                    --mid-y: -18px;
+                    --rand-y: -46px;
+                    animation-name: diffuse;
+                    animation-duration: 3.04427699525126s;
+                    animation-delay: 0.19718225445154242s;
+                "
+            />
+            
+            <rect x="206" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -144px;
+                    --mid-y: 18px;
+                    --rand-y: -126px;
+                    animation-name: diffuse;
+                    animation-duration: 2.122063943715264s;
+                    animation-delay: 1.453410353376539s;
+                "
+            />
+            
+            <rect x="234" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -378px;
+                    --mid-y: -55px;
+                    --rand-y: -157px;
+                    animation-name: diffuse;
+                    animation-duration: 3.3344938927041268s;
+                    animation-delay: 1.0165631365759022s;
+                "
+            />
+            
+            <rect x="290" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -408px;
+                    --mid-y: -51px;
+                    --rand-y: 61px;
+                    animation-name: diffuse;
+                    animation-duration: 2.893207786208003s;
+                    animation-delay: 0.4994361300647233s;
+                "
+            />
+            
+            <rect x="318" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -174px;
+                    --mid-y: -42px;
+                    --rand-y: 60px;
+                    animation-name: diffuse;
+                    animation-duration: 3.0274612324307935s;
+                    animation-delay: 1.019847296606363s;
+                "
+            />
+            
+            <rect x="332" y="58" width="10" height="10" rx="2" fill="#006d32" class="box"
+                style="
+                    --mid-x: -164px;
+                    --mid-y: -81px;
+                    --rand-y: 151px;
+                    animation-name: diffuse;
+                    animation-duration: 3.050179253780067s;
+                    animation-delay: 0.40130185029847837s;
+                "
+            />
+            
+            <rect x="332" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -98px;
+                    --mid-y: 41px;
+                    --rand-y: -3px;
+                    animation-name: diffuse;
+                    animation-duration: 3.609657427789295s;
+                    animation-delay: 1.4170407686506716s;
+                "
+            />
+            
+            <rect x="346" y="58" width="10" height="10" rx="2" fill="#39d353" class="box"
+                style="
+                    --mid-x: -230px;
+                    --mid-y: 64px;
+                    --rand-y: 46px;
+                    animation-name: diffuse;
+                    animation-duration: 3.5192713424217894s;
+                    animation-delay: 0.8804045690720873s;
+                "
+            />
+            
+            <rect x="402" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -564px;
+                    --mid-y: 25px;
+                    --rand-y: -82px;
+                    animation-name: diffuse;
+                    animation-duration: 3.737645052215121s;
+                    animation-delay: 1.036458281840921s;
+                "
+            />
+            
+            <rect x="402" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
+                style="
+                    --mid-x: -438px;
+                    --mid-y: -25px;
+                    --rand-y: -65px;
+                    animation-name: diffuse;
+                    animation-duration: 2.072200342368814s;
+                    animation-delay: 0.2565727816420031s;
+                "
+            />
+            
+            <rect x="402" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -478px;
+                    --mid-y: 3px;
+                    --rand-y: -104px;
+                    animation-name: diffuse;
+                    animation-duration: 2.9796086715108343s;
+                    animation-delay: 1.2996895367857535s;
+                "
+            />
+            
+            <rect x="430" y="44" width="10" height="10" rx="2" fill="#006d32" class="box"
+                style="
+                    --mid-x: -184px;
+                    --mid-y: 43px;
+                    --rand-y: 102px;
+                    animation-name: diffuse;
+                    animation-duration: 3.883195753219829s;
+                    animation-delay: 0.5382266745933072s;
+                "
+            />
+            
+            <rect x="430" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -17px;
+                    --mid-y: 76px;
+                    --rand-y: -48px;
+                    animation-name: diffuse;
+                    animation-duration: 2.5167502564238906s;
+                    animation-delay: 1.34209546436686s;
+                "
+            />
+            
+            <rect x="556" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -593px;
+                    --mid-y: -21px;
+                    --rand-y: -178px;
+                    animation-name: diffuse;
+                    animation-duration: 3.337650595040047s;
+                    animation-delay: 0.6691939613457693s;
+                "
+            />
+            
+            <rect x="584" y="86" width="10" height="10" rx="2" fill="#006d32" class="box"
+                style="
+                    --mid-x: -410px;
+                    --mid-y: 47px;
+                    --rand-y: 102px;
+                    animation-name: diffuse;
+                    animation-duration: 3.9329914767337737s;
+                    animation-delay: 1.015112745045163s;
+                "
+            />
+            
+            <rect x="584" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -561px;
+                    --mid-y: -3px;
+                    --rand-y: -95px;
+                    animation-name: diffuse;
+                    animation-duration: 2.7113242342809034s;
+                    animation-delay: 1.2475555682780466s;
+                "
+            />
+            
+            <rect x="584" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -103px;
+                    --mid-y: -102px;
+                    --rand-y: 134px;
+                    animation-name: diffuse;
+                    animation-duration: 2.324488460016775s;
+                    animation-delay: 0.051968500658365724s;
+                "
+            />
+            
+            <rect x="598" y="58" width="10" height="10" rx="2" fill="#39d353" class="box"
+                style="
+                    --mid-x: -237px;
+                    --mid-y: -4px;
+                    --rand-y: 99px;
+                    animation-name: diffuse;
+                    animation-duration: 2.5995157806759877s;
+                    animation-delay: 1.2832111329607734s;
+                "
+            />
+            
+            <rect x="598" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
+                style="
+                    --mid-x: -286px;
+                    --mid-y: -39px;
+                    --rand-y: 48px;
+                    animation-name: diffuse;
+                    animation-duration: 3.1259693436162372s;
+                    animation-delay: 1.1367769013170907s;
+                "
+            />
+            
+            <rect x="626" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
+                style="
+                    --mid-x: -410px;
+                    --mid-y: 45px;
+                    --rand-y: -31px;
+                    animation-name: diffuse;
+                    animation-duration: 2.3487745706402947s;
+                    animation-delay: 1.4087579475201668s;
+                "
+            />
+            
+            <rect x="626" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -818px;
+                    --mid-y: -49px;
+                    --rand-y: 82px;
+                    animation-name: diffuse;
+                    animation-duration: 3.7140028367207494s;
+                    animation-delay: 0.89894687781807s;
+                "
+            />
+            
+            <rect x="626" y="100" width="10" height="10" rx="2" fill="#006d32" class="box"
+                style="
+                    --mid-x: -85px;
+                    --mid-y: -100px;
+                    --rand-y: 82px;
+                    animation-name: diffuse;
+                    animation-duration: 2.784956051402548s;
+                    animation-delay: 0.5973863632692642s;
+                "
+            />
+            
+            <rect x="640" y="30" width="10" height="10" rx="2" fill="#006d32" class="box"
+                style="
+                    --mid-x: -442px;
+                    --mid-y: 137px;
+                    --rand-y: 260px;
+                    animation-name: diffuse;
+                    animation-duration: 3.0730607418007416s;
+                    animation-delay: 0.7767654587652055s;
+                "
+            />
+            
+            <rect x="640" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -19px;
+                    --mid-y: 101px;
+                    --rand-y: 99px;
+                    animation-name: diffuse;
+                    animation-duration: 2.8024951716385145s;
+                    animation-delay: 0.5195035899878268s;
+                "
+            />
+            
+            <rect x="640" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -502px;
+                    --mid-y: 50px;
+                    --rand-y: 146px;
+                    animation-name: diffuse;
+                    animation-duration: 2.4353106735942065s;
+                    animation-delay: 1.305089036798188s;
+                "
+            />
+            
+            <rect x="654" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -340px;
+                    --mid-y: 1px;
+                    --rand-y: -149px;
+                    animation-name: diffuse;
+                    animation-duration: 3.195435038056228s;
+                    animation-delay: 0.9324317607841999s;
+                "
+            />
+            
+            <rect x="668" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -153px;
+                    --mid-y: -100px;
+                    --rand-y: 26px;
+                    animation-name: diffuse;
+                    animation-duration: 2.607132154216437s;
+                    animation-delay: 1.2935241127277841s;
+                "
+            />
+            
+            <rect x="668" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -739px;
+                    --mid-y: -91px;
+                    --rand-y: 36px;
+                    animation-name: diffuse;
+                    animation-duration: 3.8752908665165706s;
+                    animation-delay: 1.3446141439008146s;
+                "
+            />
+            
+            <rect x="682" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -513px;
+                    --mid-y: -1px;
+                    --rand-y: 76px;
+                    animation-name: diffuse;
+                    animation-duration: 3.3903677043367964s;
+                    animation-delay: 1.1702754625598029s;
+                "
+            />
+            
+            <rect x="682" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -606px;
+                    --mid-y: -26px;
+                    --rand-y: 139px;
+                    animation-name: diffuse;
+                    animation-duration: 2.7223506121399828s;
+                    animation-delay: 0.8863514205208203s;
+                "
+            />
+            
+            <rect x="710" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -352px;
+                    --mid-y: 103px;
+                    --rand-y: 239px;
+                    animation-name: diffuse;
+                    animation-duration: 3.6322892806492693s;
+                    animation-delay: 0.7204798348710297s;
+                "
+            />
+            
+            <rect x="710" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -785px;
+                    --mid-y: -21px;
+                    --rand-y: -130px;
+                    animation-name: diffuse;
+                    animation-duration: 2.4940293898966033s;
+                    animation-delay: 0.6870698265868083s;
+                "
+            />
+            
+            <rect x="710" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -786px;
+                    --mid-y: -11px;
+                    --rand-y: 148px;
+                    animation-name: diffuse;
+                    animation-duration: 3.476269081933236s;
+                    animation-delay: 1.1090277094041696s;
+                "
+            />
+            
+            <rect x="710" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -659px;
+                    --mid-y: 13px;
+                    --rand-y: -21px;
+                    animation-name: diffuse;
+                    animation-duration: 3.8854064872907994s;
+                    animation-delay: 0.1093968049060427s;
+                "
+            />
+            
+            <rect x="724" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -441px;
+                    --mid-y: 104px;
+                    --rand-y: -12px;
+                    animation-name: diffuse;
+                    animation-duration: 2.94174143908332s;
+                    animation-delay: 1.3146172025525444s;
+                "
+            />
+            
+            <rect x="724" y="58" width="10" height="10" rx="2" fill="#006d32" class="box"
+                style="
+                    --mid-x: -199px;
+                    --mid-y: -38px;
+                    --rand-y: 228px;
+                    animation-name: diffuse;
+                    animation-duration: 2.8426990649677015s;
+                    animation-delay: 1.2274485257703955s;
+                "
+            />
+            
+            <rect x="724" y="72" width="10" height="10" rx="2" fill="#39d353" class="box"
+                style="
+                    --mid-x: -510px;
+                    --mid-y: 121px;
+                    --rand-y: 17px;
+                    animation-name: diffuse;
+                    animation-duration: 2.524364040011051s;
+                    animation-delay: 0.33247519941071946s;
+                "
+            />
+            
+            <rect x="724" y="86" width="10" height="10" rx="2" fill="#39d353" class="box"
+                style="
+                    --mid-x: -498px;
+                    --mid-y: -29px;
+                    --rand-y: -149px;
+                    animation-name: diffuse;
+                    animation-duration: 2.647958865452961s;
+                    animation-delay: 0.5610494596757096s;
+                "
+            />
+            
+            <rect x="724" y="100" width="10" height="10" rx="2" fill="#39d353" class="box"
+                style="
+                    --mid-x: -200px;
+                    --mid-y: -32px;
+                    --rand-y: 97px;
+                    animation-name: diffuse;
+                    animation-duration: 3.8630169257485534s;
+                    animation-delay: 1.1675877824808087s;
+                "
+            />
+            
+            <rect x="724" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    --mid-x: -18px;
+                    --mid-y: -22px;
+                    --rand-y: -18px;
+                    animation-name: diffuse;
+                    animation-duration: 3.6522927641276164s;
+                    animation-delay: 0.6095430838496557s;
+                "
+            />
+            
+            <rect x="738" y="44" width="10" height="10" rx="2" fill="#26a641" class="box"
+                style="
+                    --mid-x: -237px;
+                    --mid-y: -69px;
+                    --rand-y: 54px;
+                    animation-name: diffuse;
+                    animation-duration: 2.80933987091366s;
+                    animation-delay: 0.5962662945982924s;
+                "
+            />
+            
+            <rect x="738" y="58" width="10" height="10" rx="2" fill="#39d353" class="box"
+                style="
+                    --mid-x: -825px;
+                    --mid-y: -85px;
+                    --rand-y: 183px;
+                    animation-name: diffuse;
+                    animation-duration: 3.8156116334989534s;
+                    animation-delay: 1.2204435657248556s;
+                "
+            />
+            
+            <rect x="738" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
+                style="
+                    --mid-x: -348px;
+                    --mid-y: 88px;
+                    --rand-y: 119px;
+                    animation-name: diffuse;
+                    animation-duration: 3.0784328837265984s;
+                    animation-delay: 0.6014594427435822s;
+                "
+            />
+            </g>
+        <text x="15" y="20" fill="#c9d1d9" font-family="monospace" font-size="14">Contribution Diffusion</text>
+    </svg>
+    
