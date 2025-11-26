@@ -102,14 +102,15 @@ def generate_svg(weeks):
             # Calculate total duration and number of steps for slow fill
             total_cols_to_move = final_col - current_col
             
-            # Slower movement: Base duration is high, factor in distance
-            base_duration = 10.0 
-            distance_factor = 0.5 * total_cols_to_move # Slower progression based on distance
-            animation_duration = base_duration + distance_factor + random.uniform(2.0, 5.0) 
+            # Use shorter paths and duration to reduce file size:
+            base_duration = 5.0 # Reduced base time for shorter animations
+            distance_factor = 0.5 * total_cols_to_move 
+            # Smaller random range for duration
+            animation_duration = base_duration + distance_factor + random.uniform(1.0, 3.0) 
             
-            # Total number of hops is proportional to distance and time
-            num_hops = max(40, int(total_cols_to_move * 2) + random.randint(10, 20)) 
-            
+            # *** CRITICAL FIX: Drastically reducing the number of hops ***
+            # Aim for 5 to 16 hops maximum per particle instead of 10 to 40+
+            num_hops = max(5, int(total_cols_to_move * 0.5) + random.randint(3, 8))
             
             # --- Biased Random Walk Simulation (Generating the intermediate hops) ---
             for i in range(1, num_hops):
