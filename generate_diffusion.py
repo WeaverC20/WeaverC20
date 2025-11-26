@@ -79,7 +79,8 @@ def generate_svg(weeks):
             background_grid.append(f'<rect x="{bg_x}" y="{bg_y}" width="{RECT_SIZE}" height="{RECT_SIZE}" rx="2" fill="{COLORS["NONE"]}" opacity="0.3"/>')
 
     animated_squares_count = 0
-    FIXED_HOPS = 5 # Used by steps() for the number of discrete jumps
+    # INCREASED HOPS: More steps create a more staggered, random-looking walk.
+    FIXED_HOPS = 10 
     
     # --- Cluster Start Coordinates ---
     # Center the starting cluster vertically (Row 3, which is 4th row)
@@ -114,8 +115,8 @@ def generate_svg(weeks):
             start_y_offset = (CLUSTER_CENTER_Y_PX + jitter_y) - final_y_px
 
             # --- 3. Animation Timing ---
-            # Longer duration for columns further to the right
-            duration = random.uniform(3.0, 7.0) + (final_col * 0.1) 
+            # LONGER DURATION: Increased range to accommodate the 10 steps for a slower, more deliberate walk
+            duration = random.uniform(5.0, 10.0) + (final_col * 0.1) 
             delay = random.uniform(0, 3.0) 
             
             rect = f"""
@@ -145,7 +146,7 @@ def generate_svg(weeks):
         /* 0%: Start at the unique offset defined by the element's CSS variables */
         0% {{ 
             transform: translate(var(--start-x), var(--start-y)); 
-            opacity: 1; /* FIX 2: Make it visible immediately upon animation start */
+            opacity: 1; 
         }}
         /* 100%: End at relative (0, 0), which is the final static x/y position */
         100% {{ 
@@ -161,7 +162,7 @@ def generate_svg(weeks):
     <![CDATA[
     .box {{ 
         animation-fill-mode: forwards; 
-        /* FIX 1: Set initial opacity to 0 to prevent the FOUC flicker at the final position */
+        /* Set initial opacity to 0 to prevent the FOUC flicker at the final position */
         opacity: 0;
         transform-box: fill-box; 
         transform-origin: center;
