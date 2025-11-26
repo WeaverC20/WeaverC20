@@ -108,7 +108,7 @@ def generate_svg(weeks):
             animation_duration = base_duration + distance_factor + random.uniform(2.0, 5.0) 
             
             # Total number of hops is proportional to distance and time
-            num_hops = max(10, int(total_cols_to_move * 2) + random.randint(10, 20)) 
+            num_hops = max(40, int(total_cols_to_move * 2) + random.randint(10, 20)) 
             
             
             # --- Biased Random Walk Simulation (Generating the intermediate hops) ---
