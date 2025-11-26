@@ -2,9 +2,14 @@ import os
 import requests
 import random
 import sys
+# New import to load .env file variables
+from dotenv import load_dotenv
 
 # CONFIGURATION
-# Assumes GH_USERNAME and GH_TOKEN are set in the environment
+# 1. Load environment variables from the .env file (if it exists)
+load_dotenv() 
+
+# 2. Assign variables using os.getenv(), which pulls from the .env file now.
 USERNAME = os.getenv('GH_USERNAME')
 TOKEN = os.getenv('GH_TOKEN') 
 
@@ -209,8 +214,9 @@ def generate_svg(weeks):
 
 def main():
     # Check for required environment variables
+    # Note: These variables are loaded from the .env file via load_dotenv()
     if not USERNAME or not TOKEN:
-        print(f"Error: {'GH_USERNAME' if not USERNAME else 'GH_TOKEN'} is missing.")
+        print(f"Error: GH_USERNAME or GH_TOKEN is missing. Ensure your .env file is correct.")
         # Exit gracefully if environment variables are missing
         sys.exit(1)
 

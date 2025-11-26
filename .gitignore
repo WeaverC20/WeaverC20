@@ -1,0 +1,19 @@
+# Python virtual environments
+venv/
+.env/
+.venv/
+
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# macOS files
+.DS_Store
