@@ -176,7 +176,6 @@ def generate_svg(weeks):
     svg_content = f"""
     <svg width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" xmlns="http://www.w3.org/2000/svg">
         <rect width="100%" height="100%" fill="#0d1117" rx="6" />
-        <text x="15" y="20" fill="#c9d1d9" font-family="monospace" font-size="14">Contribution Diffusion for {USERNAME}</text>
         {full_css_style}
         <g>
             {''.join(background_grid)}
