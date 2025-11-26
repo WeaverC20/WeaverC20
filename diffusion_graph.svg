@@ -1,547 +1,748 @@
 
     <svg width="850" height="200" viewBox="0 0 850 200" xmlns="http://www.w3.org/2000/svg">
         <rect width="100%" height="100%" fill="#0d1117" rx="6" />
-        <text x="15" y="20" fill="#c9d1d9" font-family="monospace" font-size="14">Contribution Diffusion</text>
+        <text x="15" y="20" fill="#c9d1d9" font-family="monospace" font-size="14">Contribution Diffusion for WeaverC20</text>
+        
+    <style type="text/css">
+    <![CDATA[
+    .box { 
+        animation-fill-mode: forwards; 
+        /* Important for SVG: ensures transforms are relative to the element */
+        transform-box: fill-box; 
+        transform-origin: center;
+    }
+    
+    @keyframes diffuse-motion {
+        /* Start position is defined by the unique CSS variables --start-x and --start-y */
+        0% { transform: translate(var(--start-x), var(--start-y)); opacity: 0; }
+        50% { opacity: 1; }
+        /* End position is (0, 0) relative to the rect's static x/y attributes */
+        100% { transform: translate(0, 0); opacity: 1; }
+    }
+    
+    ]]>
+    </style>
+    
         <g>
-            <rect x="10" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="10" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="10" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="10" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="10" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="10" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="10" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="24" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="24" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="24" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="24" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="24" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="24" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="24" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="38" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="38" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="38" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="38" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="38" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="38" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="38" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="52" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="52" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="52" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="52" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="52" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="52" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="52" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="66" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="66" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="66" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="66" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="66" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="66" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="66" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="80" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="80" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="80" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="80" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="80" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="80" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="80" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="94" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="94" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="94" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="94" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="94" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="94" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="94" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="108" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="108" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="108" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="108" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="108" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="108" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="108" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="122" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="122" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="122" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="122" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="122" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="122" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="122" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="136" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="136" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="136" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="136" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="136" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="136" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="136" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="150" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="150" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="150" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="150" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="150" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="150" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="150" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="164" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="164" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="164" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="164" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="164" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="164" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="164" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="178" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="178" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="178" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="178" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="178" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="178" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="178" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="192" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="192" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="192" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="192" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="192" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="192" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="192" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="206" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="206" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="206" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="206" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="206" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="206" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="206" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="220" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="220" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="220" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="220" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="220" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="220" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="220" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="234" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="234" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="234" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="234" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="234" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="234" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="234" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="248" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="248" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="248" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="248" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="248" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="248" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="248" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="262" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="262" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="262" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="262" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="262" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="262" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="262" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="276" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="276" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="276" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="276" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="276" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="276" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="276" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="290" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="290" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="290" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="290" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="290" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="290" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="290" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="304" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="304" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="304" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="304" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="304" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="304" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="304" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="318" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="318" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="318" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="318" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="318" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="318" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="318" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="332" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="332" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="332" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="332" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="332" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="332" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="332" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="346" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="346" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="346" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="346" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="346" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="346" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="346" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="360" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="360" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="360" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="360" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="360" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="360" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="360" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="374" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="374" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="374" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="374" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="374" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="374" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="374" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="388" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="388" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="388" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="388" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="388" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="388" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="388" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="402" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="402" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="402" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="402" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="402" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="402" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="402" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="416" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="416" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="416" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="416" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="416" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="416" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="416" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="430" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="430" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="430" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="430" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="430" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="430" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="430" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="444" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="444" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="444" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="444" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="444" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="444" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="444" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="458" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="458" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="458" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="458" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="458" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="458" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="458" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="472" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="472" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="472" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="472" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="472" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="472" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="472" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="486" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="486" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="486" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="486" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="486" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="486" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="486" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="500" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="500" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="500" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="500" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="500" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="500" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="500" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="514" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="514" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="514" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="514" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="514" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="514" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="514" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="528" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="528" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="528" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="528" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="528" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="528" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="528" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="542" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="542" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="542" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="542" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="542" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="542" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="542" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="556" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="556" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="556" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="556" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="556" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="556" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="556" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="570" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="570" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="570" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="570" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="570" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="570" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="570" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="584" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="584" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="584" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="584" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="584" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="584" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="584" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="598" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="598" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="598" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="598" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="598" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="598" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="598" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="612" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="612" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="612" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="612" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="612" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="612" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="612" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="626" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="626" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="626" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="626" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="626" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="626" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="626" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="640" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="640" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="640" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="640" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="640" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="640" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="640" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="654" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="654" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="654" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="654" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="654" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="654" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="654" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="668" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="668" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="668" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="668" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="668" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="668" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="668" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="682" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="682" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="682" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="682" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="682" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="682" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="682" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="696" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="696" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="696" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="696" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="696" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="696" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="696" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="710" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="710" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="710" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="710" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="710" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="710" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="710" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="724" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="724" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="724" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="724" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="724" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="724" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="724" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="738" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="738" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="738" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="738" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="738" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="738" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/><rect x="738" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.1"/>
-            <style>.box { animation-timing-function: linear; animation-fill-mode: forwards; } @diffuse-1-4-3655 {0% { transform: translate(10px, 30px); opacity: 0.8; }19% { transform: translate(10px, 30px); opacity: 1; }39% { transform: translate(10px, 30px); opacity: 1; }59% { transform: translate(10px, 30px); opacity: 1; }79% { transform: translate(10px, 30px); opacity: 1; }100% { transform: translate(24px, 86px); opacity: 1; }}
-@diffuse-12-6-4355 {0% { transform: translate(10px, 58px); opacity: 0.8; }16% { transform: translate(10px, 100px); opacity: 1; }33% { transform: translate(24px, 114px); opacity: 1; }49% { transform: translate(66px, 114px); opacity: 1; }66% { transform: translate(52px, 114px); opacity: 1; }82% { transform: translate(66px, 100px); opacity: 1; }100% { transform: translate(178px, 114px); opacity: 1; }}
-@diffuse-14-1-7587 {0% { transform: translate(10px, 44px); opacity: 0.8; }19% { transform: translate(24px, 86px); opacity: 1; }39% { transform: translate(52px, 86px); opacity: 1; }59% { transform: translate(80px, 114px); opacity: 1; }79% { transform: translate(80px, 86px); opacity: 1; }100% { transform: translate(206px, 44px); opacity: 1; }}
-@diffuse-14-3-1034 {0% { transform: translate(10px, 30px); opacity: 0.8; }16% { transform: translate(10px, 30px); opacity: 1; }33% { transform: translate(52px, 44px); opacity: 1; }49% { transform: translate(38px, 72px); opacity: 1; }66% { transform: translate(66px, 114px); opacity: 1; }82% { transform: translate(52px, 114px); opacity: 1; }100% { transform: translate(206px, 72px); opacity: 1; }}
-@diffuse-16-2-3221 {0% { transform: translate(10px, 114px); opacity: 0.8; }19% { transform: translate(10px, 114px); opacity: 1; }39% { transform: translate(52px, 114px); opacity: 1; }59% { transform: translate(94px, 114px); opacity: 1; }79% { transform: translate(108px, 114px); opacity: 1; }100% { transform: translate(234px, 58px); opacity: 1; }}
-@diffuse-20-3-2879 {0% { transform: translate(10px, 100px); opacity: 0.8; }12% { transform: translate(52px, 114px); opacity: 1; }24% { transform: translate(94px, 86px); opacity: 1; }37% { transform: translate(80px, 44px); opacity: 1; }49% { transform: translate(94px, 30px); opacity: 1; }61% { transform: translate(122px, 30px); opacity: 1; }74% { transform: translate(122px, 30px); opacity: 1; }86% { transform: translate(164px, 30px); opacity: 1; }100% { transform: translate(290px, 72px); opacity: 1; }}
-@diffuse-22-2-5430 {0% { transform: translate(10px, 100px); opacity: 0.8; }12% { transform: translate(52px, 100px); opacity: 1; }24% { transform: translate(52px, 86px); opacity: 1; }37% { transform: translate(94px, 72px); opacity: 1; }49% { transform: translate(122px, 30px); opacity: 1; }61% { transform: translate(122px, 30px); opacity: 1; }74% { transform: translate(136px, 44px); opacity: 1; }86% { transform: translate(122px, 30px); opacity: 1; }100% { transform: translate(318px, 58px); opacity: 1; }}
-@diffuse-23-2-6352 {0% { transform: translate(10px, 86px); opacity: 0.8; }14% { transform: translate(38px, 114px); opacity: 1; }28% { transform: translate(80px, 114px); opacity: 1; }42% { transform: translate(108px, 100px); opacity: 1; }56% { transform: translate(94px, 58px); opacity: 1; }70% { transform: translate(108px, 44px); opacity: 1; }84% { transform: translate(150px, 58px); opacity: 1; }100% { transform: translate(332px, 58px); opacity: 1; }}
-@diffuse-23-3-9595 {0% { transform: translate(10px, 44px); opacity: 0.8; }16% { transform: translate(10px, 30px); opacity: 1; }33% { transform: translate(10px, 44px); opacity: 1; }49% { transform: translate(10px, 44px); opacity: 1; }66% { transform: translate(10px, 44px); opacity: 1; }82% { transform: translate(10px, 44px); opacity: 1; }100% { transform: translate(332px, 72px); opacity: 1; }}
-@diffuse-24-2-2753 {0% { transform: translate(10px, 30px); opacity: 0.8; }12% { transform: translate(38px, 44px); opacity: 1; }24% { transform: translate(80px, 30px); opacity: 1; }37% { transform: translate(122px, 30px); opacity: 1; }49% { transform: translate(136px, 72px); opacity: 1; }61% { transform: translate(178px, 44px); opacity: 1; }74% { transform: translate(206px, 72px); opacity: 1; }86% { transform: translate(220px, 86px); opacity: 1; }100% { transform: translate(346px, 58px); opacity: 1; }}
-@diffuse-28-1-7938 {0% { transform: translate(10px, 100px); opacity: 0.8; }16% { transform: translate(38px, 58px); opacity: 1; }33% { transform: translate(38px, 30px); opacity: 1; }49% { transform: translate(80px, 30px); opacity: 1; }66% { transform: translate(94px, 58px); opacity: 1; }82% { transform: translate(94px, 58px); opacity: 1; }100% { transform: translate(402px, 44px); opacity: 1; }}
-@diffuse-28-3-1327 {0% { transform: translate(10px, 72px); opacity: 0.8; }16% { transform: translate(38px, 58px); opacity: 1; }33% { transform: translate(52px, 58px); opacity: 1; }49% { transform: translate(80px, 30px); opacity: 1; }66% { transform: translate(108px, 30px); opacity: 1; }82% { transform: translate(150px, 30px); opacity: 1; }100% { transform: translate(402px, 72px); opacity: 1; }}
-@diffuse-28-5-8417 {0% { transform: translate(10px, 58px); opacity: 0.8; }11% { transform: translate(10px, 58px); opacity: 1; }22% { transform: translate(38px, 44px); opacity: 1; }33% { transform: translate(38px, 72px); opacity: 1; }44% { transform: translate(52px, 72px); opacity: 1; }55% { transform: translate(38px, 86px); opacity: 1; }66% { transform: translate(66px, 114px); opacity: 1; }77% { transform: translate(52px, 114px); opacity: 1; }88% { transform: translate(66px, 100px); opacity: 1; }100% { transform: translate(402px, 100px); opacity: 1; }}
-@diffuse-30-1-2588 {0% { transform: translate(10px, 114px); opacity: 0.8; }11% { transform: translate(10px, 114px); opacity: 1; }22% { transform: translate(24px, 86px); opacity: 1; }33% { transform: translate(38px, 44px); opacity: 1; }44% { transform: translate(24px, 30px); opacity: 1; }55% { transform: translate(24px, 58px); opacity: 1; }66% { transform: translate(66px, 58px); opacity: 1; }77% { transform: translate(66px, 30px); opacity: 1; }88% { transform: translate(52px, 30px); opacity: 1; }100% { transform: translate(430px, 44px); opacity: 1; }}
-@diffuse-30-2-8965 {0% { transform: translate(10px, 44px); opacity: 0.8; }11% { transform: translate(10px, 44px); opacity: 1; }22% { transform: translate(24px, 72px); opacity: 1; }33% { transform: translate(52px, 86px); opacity: 1; }44% { transform: translate(94px, 72px); opacity: 1; }55% { transform: translate(122px, 30px); opacity: 1; }66% { transform: translate(150px, 30px); opacity: 1; }77% { transform: translate(150px, 72px); opacity: 1; }88% { transform: translate(164px, 86px); opacity: 1; }100% { transform: translate(430px, 58px); opacity: 1; }}
-@diffuse-39-5-4810 {0% { transform: translate(10px, 114px); opacity: 0.8; }11% { transform: translate(52px, 114px); opacity: 1; }22% { transform: translate(52px, 114px); opacity: 1; }33% { transform: translate(52px, 86px); opacity: 1; }44% { transform: translate(38px, 100px); opacity: 1; }55% { transform: translate(52px, 72px); opacity: 1; }66% { transform: translate(80px, 44px); opacity: 1; }77% { transform: translate(80px, 86px); opacity: 1; }88% { transform: translate(94px, 100px); opacity: 1; }100% { transform: translate(556px, 100px); opacity: 1; }}
-@diffuse-41-4-1422 {0% { transform: translate(10px, 100px); opacity: 0.8; }7% { transform: translate(10px, 114px); opacity: 1; }15% { transform: translate(24px, 114px); opacity: 1; }22% { transform: translate(66px, 86px); opacity: 1; }30% { transform: translate(52px, 114px); opacity: 1; }38% { transform: translate(80px, 72px); opacity: 1; }45% { transform: translate(66px, 114px); opacity: 1; }53% { transform: translate(108px, 114px); opacity: 1; }60% { transform: translate(108px, 72px); opacity: 1; }68% { transform: translate(136px, 30px); opacity: 1; }76% { transform: translate(136px, 30px); opacity: 1; }83% { transform: translate(136px, 30px); opacity: 1; }91% { transform: translate(178px, 44px); opacity: 1; }100% { transform: translate(584px, 86px); opacity: 1; }}
-@diffuse-41-5-8308 {0% { transform: translate(10px, 44px); opacity: 0.8; }9% { transform: translate(52px, 30px); opacity: 1; }19% { transform: translate(52px, 30px); opacity: 1; }29% { transform: translate(94px, 44px); opacity: 1; }39% { transform: translate(94px, 72px); opacity: 1; }49% { transform: translate(136px, 30px); opacity: 1; }59% { transform: translate(122px, 30px); opacity: 1; }69% { transform: translate(108px, 44px); opacity: 1; }79% { transform: translate(108px, 30px); opacity: 1; }89% { transform: translate(136px, 44px); opacity: 1; }100% { transform: translate(584px, 100px); opacity: 1; }}
-@diffuse-41-6-368 {0% { transform: translate(10px, 86px); opacity: 0.8; }9% { transform: translate(52px, 44px); opacity: 1; }18% { transform: translate(52px, 30px); opacity: 1; }26% { transform: translate(66px, 30px); opacity: 1; }36% { transform: translate(94px, 58px); opacity: 1; }45% { transform: translate(122px, 30px); opacity: 1; }53% { transform: translate(108px, 44px); opacity: 1; }63% { transform: translate(150px, 72px); opacity: 1; }72% { transform: translate(136px, 30px); opacity: 1; }81% { transform: translate(122px, 30px); opacity: 1; }90% { transform: translate(150px, 72px); opacity: 1; }100% { transform: translate(584px, 114px); opacity: 1; }}
-@diffuse-42-2-1359 {0% { transform: translate(10px, 58px); opacity: 0.8; }8% { transform: translate(10px, 72px); opacity: 1; }16% { transform: translate(38px, 44px); opacity: 1; }24% { transform: translate(38px, 44px); opacity: 1; }33% { transform: translate(52px, 30px); opacity: 1; }41% { transform: translate(66px, 72px); opacity: 1; }49% { transform: translate(66px, 100px); opacity: 1; }57% { transform: translate(94px, 72px); opacity: 1; }66% { transform: translate(80px, 44px); opacity: 1; }74% { transform: translate(66px, 58px); opacity: 1; }82% { transform: translate(66px, 58px); opacity: 1; }90% { transform: translate(108px, 72px); opacity: 1; }100% { transform: translate(598px, 58px); opacity: 1; }}
-@diffuse-42-3-1779 {0% { transform: translate(10px, 44px); opacity: 0.8; }7% { transform: translate(38px, 30px); opacity: 1; }15% { transform: translate(80px, 58px); opacity: 1; }22% { transform: translate(66px, 58px); opacity: 1; }30% { transform: translate(52px, 30px); opacity: 1; }38% { transform: translate(38px, 30px); opacity: 1; }45% { transform: translate(80px, 44px); opacity: 1; }53% { transform: translate(108px, 30px); opacity: 1; }60% { transform: translate(150px, 30px); opacity: 1; }68% { transform: translate(150px, 30px); opacity: 1; }76% { transform: translate(164px, 30px); opacity: 1; }83% { transform: translate(150px, 30px); opacity: 1; }91% { transform: translate(192px, 30px); opacity: 1; }100% { transform: translate(598px, 72px); opacity: 1; }}
-@diffuse-44-3-4124 {0% { transform: translate(10px, 86px); opacity: 0.8; }9% { transform: translate(52px, 114px); opacity: 1; }19% { transform: translate(52px, 86px); opacity: 1; }29% { transform: translate(52px, 100px); opacity: 1; }39% { transform: translate(94px, 86px); opacity: 1; }49% { transform: translate(80px, 114px); opacity: 1; }59% { transform: translate(66px, 86px); opacity: 1; }69% { transform: translate(108px, 44px); opacity: 1; }79% { transform: translate(150px, 30px); opacity: 1; }89% { transform: translate(178px, 30px); opacity: 1; }100% { transform: translate(626px, 72px); opacity: 1; }}
-@diffuse-44-4-8907 {0% { transform: translate(10px, 30px); opacity: 0.8; }7% { transform: translate(38px, 58px); opacity: 1; }15% { transform: translate(66px, 86px); opacity: 1; }22% { transform: translate(80px, 114px); opacity: 1; }30% { transform: translate(108px, 86px); opacity: 1; }38% { transform: translate(122px, 72px); opacity: 1; }45% { transform: translate(108px, 86px); opacity: 1; }53% { transform: translate(136px, 58px); opacity: 1; }60% { transform: translate(136px, 58px); opacity: 1; }68% { transform: translate(178px, 86px); opacity: 1; }76% { transform: translate(192px, 58px); opacity: 1; }83% { transform: translate(178px, 72px); opacity: 1; }91% { transform: translate(220px, 114px); opacity: 1; }100% { transform: translate(626px, 86px); opacity: 1; }}
-@diffuse-44-5-3075 {0% { transform: translate(10px, 114px); opacity: 0.8; }9% { transform: translate(24px, 114px); opacity: 1; }18% { transform: translate(24px, 114px); opacity: 1; }26% { transform: translate(66px, 86px); opacity: 1; }36% { transform: translate(94px, 114px); opacity: 1; }45% { transform: translate(108px, 72px); opacity: 1; }53% { transform: translate(108px, 44px); opacity: 1; }63% { transform: translate(136px, 44px); opacity: 1; }72% { transform: translate(136px, 44px); opacity: 1; }81% { transform: translate(150px, 58px); opacity: 1; }90% { transform: translate(164px, 58px); opacity: 1; }100% { transform: translate(626px, 100px); opacity: 1; }}
-@diffuse-45-0-6576 {0% { transform: translate(10px, 58px); opacity: 0.8; }9% { transform: translate(10px, 30px); opacity: 1; }18% { transform: translate(38px, 30px); opacity: 1; }26% { transform: translate(52px, 30px); opacity: 1; }36% { transform: translate(52px, 30px); opacity: 1; }45% { transform: translate(94px, 30px); opacity: 1; }53% { transform: translate(136px, 30px); opacity: 1; }63% { transform: translate(136px, 58px); opacity: 1; }72% { transform: translate(178px, 44px); opacity: 1; }81% { transform: translate(178px, 30px); opacity: 1; }90% { transform: translate(164px, 30px); opacity: 1; }100% { transform: translate(640px, 30px); opacity: 1; }}
-@diffuse-45-1-3575 {0% { transform: translate(10px, 30px); opacity: 0.8; }7% { transform: translate(38px, 30px); opacity: 1; }14% { transform: translate(24px, 30px); opacity: 1; }21% { transform: translate(24px, 30px); opacity: 1; }28% { transform: translate(24px, 58px); opacity: 1; }35% { transform: translate(10px, 30px); opacity: 1; }42% { transform: translate(24px, 44px); opacity: 1; }49% { transform: translate(52px, 72px); opacity: 1; }56% { transform: translate(94px, 44px); opacity: 1; }63% { transform: translate(108px, 30px); opacity: 1; }70% { transform: translate(136px, 30px); opacity: 1; }77% { transform: translate(122px, 44px); opacity: 1; }84% { transform: translate(164px, 44px); opacity: 1; }91% { transform: translate(178px, 30px); opacity: 1; }100% { transform: translate(640px, 44px); opacity: 1; }}
-@diffuse-45-4-537 {0% { transform: translate(10px, 86px); opacity: 0.8; }7% { transform: translate(24px, 100px); opacity: 1; }14% { transform: translate(52px, 114px); opacity: 1; }21% { transform: translate(94px, 114px); opacity: 1; }28% { transform: translate(94px, 114px); opacity: 1; }35% { transform: translate(122px, 114px); opacity: 1; }42% { transform: translate(164px, 114px); opacity: 1; }49% { transform: translate(206px, 114px); opacity: 1; }56% { transform: translate(206px, 114px); opacity: 1; }63% { transform: translate(220px, 114px); opacity: 1; }70% { transform: translate(220px, 114px); opacity: 1; }77% { transform: translate(248px, 114px); opacity: 1; }84% { transform: translate(248px, 114px); opacity: 1; }91% { transform: translate(276px, 114px); opacity: 1; }100% { transform: translate(640px, 86px); opacity: 1; }}
-@diffuse-46-4-9922 {0% { transform: translate(10px, 72px); opacity: 0.8; }9% { transform: translate(10px, 86px); opacity: 1; }18% { transform: translate(52px, 114px); opacity: 1; }26% { transform: translate(80px, 114px); opacity: 1; }36% { transform: translate(66px, 72px); opacity: 1; }45% { transform: translate(80px, 114px); opacity: 1; }53% { transform: translate(108px, 114px); opacity: 1; }63% { transform: translate(94px, 86px); opacity: 1; }72% { transform: translate(94px, 114px); opacity: 1; }81% { transform: translate(136px, 114px); opacity: 1; }90% { transform: translate(136px, 114px); opacity: 1; }100% { transform: translate(654px, 86px); opacity: 1; }}
-@diffuse-47-4-3236 {0% { transform: translate(10px, 58px); opacity: 0.8; }9% { transform: translate(38px, 44px); opacity: 1; }19% { transform: translate(66px, 30px); opacity: 1; }29% { transform: translate(52px, 30px); opacity: 1; }39% { transform: translate(52px, 72px); opacity: 1; }49% { transform: translate(38px, 58px); opacity: 1; }59% { transform: translate(66px, 100px); opacity: 1; }69% { transform: translate(108px, 114px); opacity: 1; }79% { transform: translate(122px, 72px); opacity: 1; }89% { transform: translate(150px, 114px); opacity: 1; }100% { transform: translate(668px, 86px); opacity: 1; }}
-@diffuse-47-5-3524 {0% { transform: translate(10px, 58px); opacity: 0.8; }8% { transform: translate(10px, 30px); opacity: 1; }16% { transform: translate(24px, 72px); opacity: 1; }24% { transform: translate(66px, 72px); opacity: 1; }33% { transform: translate(52px, 30px); opacity: 1; }41% { transform: translate(80px, 72px); opacity: 1; }49% { transform: translate(80px, 30px); opacity: 1; }57% { transform: translate(80px, 58px); opacity: 1; }66% { transform: translate(80px, 58px); opacity: 1; }74% { transform: translate(122px, 100px); opacity: 1; }82% { transform: translate(122px, 86px); opacity: 1; }90% { transform: translate(136px, 58px); opacity: 1; }100% { transform: translate(668px, 100px); opacity: 1; }}
-@diffuse-48-2-5112 {0% { transform: translate(10px, 72px); opacity: 0.8; }7% { transform: translate(10px, 72px); opacity: 1; }15% { transform: translate(38px, 86px); opacity: 1; }22% { transform: translate(38px, 86px); opacity: 1; }30% { transform: translate(52px, 114px); opacity: 1; }38% { transform: translate(52px, 114px); opacity: 1; }45% { transform: translate(94px, 114px); opacity: 1; }53% { transform: translate(94px, 114px); opacity: 1; }60% { transform: translate(94px, 114px); opacity: 1; }68% { transform: translate(80px, 114px); opacity: 1; }76% { transform: translate(66px, 100px); opacity: 1; }83% { transform: translate(94px, 86px); opacity: 1; }91% { transform: translate(136px, 114px); opacity: 1; }100% { transform: translate(682px, 58px); opacity: 1; }}
-@diffuse-48-3-3194 {0% { transform: translate(10px, 58px); opacity: 0.8; }8% { transform: translate(52px, 100px); opacity: 1; }16% { transform: translate(80px, 100px); opacity: 1; }24% { transform: translate(94px, 86px); opacity: 1; }33% { transform: translate(94px, 58px); opacity: 1; }41% { transform: translate(136px, 30px); opacity: 1; }49% { transform: translate(136px, 30px); opacity: 1; }57% { transform: translate(164px, 30px); opacity: 1; }66% { transform: translate(206px, 30px); opacity: 1; }74% { transform: translate(206px, 30px); opacity: 1; }82% { transform: translate(192px, 30px); opacity: 1; }90% { transform: translate(178px, 44px); opacity: 1; }100% { transform: translate(682px, 72px); opacity: 1; }}
-@diffuse-50-1-5482 {0% { transform: translate(10px, 100px); opacity: 0.8; }6% { transform: translate(24px, 58px); opacity: 1; }13% { transform: translate(52px, 100px); opacity: 1; }19% { transform: translate(38px, 86px); opacity: 1; }26% { transform: translate(52px, 44px); opacity: 1; }33% { transform: translate(66px, 44px); opacity: 1; }39% { transform: translate(52px, 30px); opacity: 1; }46% { transform: translate(66px, 30px); opacity: 1; }52% { transform: translate(52px, 30px); opacity: 1; }59% { transform: translate(52px, 30px); opacity: 1; }66% { transform: translate(38px, 30px); opacity: 1; }72% { transform: translate(80px, 72px); opacity: 1; }79% { transform: translate(80px, 58px); opacity: 1; }85% { transform: translate(66px, 58px); opacity: 1; }92% { transform: translate(80px, 30px); opacity: 1; }100% { transform: translate(710px, 44px); opacity: 1; }}
-@diffuse-50-2-4956 {0% { transform: translate(10px, 86px); opacity: 0.8; }6% { transform: translate(38px, 100px); opacity: 1; }13% { transform: translate(52px, 58px); opacity: 1; }19% { transform: translate(80px, 30px); opacity: 1; }26% { transform: translate(108px, 30px); opacity: 1; }33% { transform: translate(94px, 44px); opacity: 1; }39% { transform: translate(108px, 30px); opacity: 1; }46% { transform: translate(94px, 30px); opacity: 1; }52% { transform: translate(108px, 72px); opacity: 1; }59% { transform: translate(94px, 100px); opacity: 1; }66% { transform: translate(136px, 86px); opacity: 1; }72% { transform: translate(164px, 114px); opacity: 1; }79% { transform: translate(164px, 100px); opacity: 1; }85% { transform: translate(206px, 86px); opacity: 1; }92% { transform: translate(192px, 58px); opacity: 1; }100% { transform: translate(710px, 58px); opacity: 1; }}
-@diffuse-50-4-5539 {0% { transform: translate(10px, 72px); opacity: 0.8; }7% { transform: translate(38px, 58px); opacity: 1; }14% { transform: translate(24px, 30px); opacity: 1; }21% { transform: translate(10px, 30px); opacity: 1; }28% { transform: translate(24px, 72px); opacity: 1; }35% { transform: translate(38px, 72px); opacity: 1; }42% { transform: translate(52px, 72px); opacity: 1; }49% { transform: translate(66px, 114px); opacity: 1; }56% { transform: translate(52px, 72px); opacity: 1; }63% { transform: translate(66px, 58px); opacity: 1; }70% { transform: translate(80px, 58px); opacity: 1; }77% { transform: translate(94px, 86px); opacity: 1; }84% { transform: translate(80px, 114px); opacity: 1; }91% { transform: translate(66px, 100px); opacity: 1; }100% { transform: translate(710px, 86px); opacity: 1; }}
-@diffuse-50-5-9912 {0% { transform: translate(10px, 114px); opacity: 0.8; }9% { transform: translate(24px, 114px); opacity: 1; }18% { transform: translate(10px, 114px); opacity: 1; }26% { transform: translate(24px, 114px); opacity: 1; }36% { transform: translate(38px, 114px); opacity: 1; }45% { transform: translate(38px, 114px); opacity: 1; }53% { transform: translate(80px, 114px); opacity: 1; }63% { transform: translate(66px, 114px); opacity: 1; }72% { transform: translate(66px, 72px); opacity: 1; }81% { transform: translate(94px, 58px); opacity: 1; }90% { transform: translate(80px, 72px); opacity: 1; }100% { transform: translate(710px, 100px); opacity: 1; }}
-@diffuse-51-1-1941 {0% { transform: translate(10px, 44px); opacity: 0.8; }8% { transform: translate(38px, 30px); opacity: 1; }16% { transform: translate(66px, 44px); opacity: 1; }24% { transform: translate(80px, 86px); opacity: 1; }33% { transform: translate(122px, 44px); opacity: 1; }41% { transform: translate(164px, 30px); opacity: 1; }49% { transform: translate(164px, 44px); opacity: 1; }57% { transform: translate(164px, 30px); opacity: 1; }66% { transform: translate(192px, 44px); opacity: 1; }74% { transform: translate(192px, 30px); opacity: 1; }82% { transform: translate(234px, 30px); opacity: 1; }90% { transform: translate(234px, 72px); opacity: 1; }100% { transform: translate(724px, 44px); opacity: 1; }}
-@diffuse-51-2-7667 {0% { transform: translate(10px, 86px); opacity: 0.8; }6% { transform: translate(24px, 114px); opacity: 1; }13% { transform: translate(24px, 100px); opacity: 1; }19% { transform: translate(38px, 58px); opacity: 1; }26% { transform: translate(52px, 86px); opacity: 1; }33% { transform: translate(38px, 86px); opacity: 1; }39% { transform: translate(80px, 72px); opacity: 1; }46% { transform: translate(66px, 86px); opacity: 1; }52% { transform: translate(66px, 114px); opacity: 1; }59% { transform: translate(52px, 86px); opacity: 1; }66% { transform: translate(66px, 44px); opacity: 1; }72% { transform: translate(94px, 58px); opacity: 1; }79% { transform: translate(122px, 100px); opacity: 1; }85% { transform: translate(164px, 114px); opacity: 1; }92% { transform: translate(206px, 114px); opacity: 1; }100% { transform: translate(724px, 58px); opacity: 1; }}
-@diffuse-51-3-6255 {0% { transform: translate(10px, 30px); opacity: 0.8; }7% { transform: translate(24px, 30px); opacity: 1; }15% { transform: translate(10px, 30px); opacity: 1; }22% { transform: translate(10px, 72px); opacity: 1; }30% { transform: translate(38px, 30px); opacity: 1; }38% { transform: translate(66px, 58px); opacity: 1; }45% { transform: translate(94px, 100px); opacity: 1; }53% { transform: translate(80px, 58px); opacity: 1; }60% { transform: translate(122px, 30px); opacity: 1; }68% { transform: translate(164px, 58px); opacity: 1; }76% { transform: translate(164px, 100px); opacity: 1; }83% { transform: translate(206px, 114px); opacity: 1; }91% { transform: translate(234px, 86px); opacity: 1; }100% { transform: translate(724px, 72px); opacity: 1; }}
-@diffuse-51-4-396 {0% { transform: translate(10px, 100px); opacity: 0.8; }7% { transform: translate(38px, 114px); opacity: 1; }15% { transform: translate(24px, 114px); opacity: 1; }22% { transform: translate(66px, 114px); opacity: 1; }30% { transform: translate(52px, 86px); opacity: 1; }38% { transform: translate(94px, 100px); opacity: 1; }45% { transform: translate(94px, 114px); opacity: 1; }53% { transform: translate(108px, 114px); opacity: 1; }60% { transform: translate(94px, 114px); opacity: 1; }68% { transform: translate(80px, 114px); opacity: 1; }76% { transform: translate(108px, 114px); opacity: 1; }83% { transform: translate(108px, 100px); opacity: 1; }91% { transform: translate(94px, 114px); opacity: 1; }100% { transform: translate(724px, 86px); opacity: 1; }}
-@diffuse-51-5-2672 {0% { transform: translate(10px, 114px); opacity: 0.8; }7% { transform: translate(10px, 114px); opacity: 1; }15% { transform: translate(10px, 86px); opacity: 1; }22% { transform: translate(10px, 86px); opacity: 1; }30% { transform: translate(10px, 44px); opacity: 1; }38% { transform: translate(24px, 30px); opacity: 1; }45% { transform: translate(38px, 44px); opacity: 1; }53% { transform: translate(66px, 44px); opacity: 1; }60% { transform: translate(52px, 30px); opacity: 1; }68% { transform: translate(66px, 58px); opacity: 1; }76% { transform: translate(66px, 100px); opacity: 1; }83% { transform: translate(52px, 114px); opacity: 1; }91% { transform: translate(66px, 86px); opacity: 1; }100% { transform: translate(724px, 100px); opacity: 1; }}
-@diffuse-51-6-640 {0% { transform: translate(10px, 86px); opacity: 0.8; }9% { transform: translate(10px, 44px); opacity: 1; }18% { transform: translate(24px, 30px); opacity: 1; }26% { transform: translate(38px, 58px); opacity: 1; }36% { transform: translate(52px, 72px); opacity: 1; }45% { transform: translate(66px, 114px); opacity: 1; }53% { transform: translate(80px, 114px); opacity: 1; }63% { transform: translate(66px, 114px); opacity: 1; }72% { transform: translate(94px, 114px); opacity: 1; }81% { transform: translate(136px, 114px); opacity: 1; }90% { transform: translate(178px, 100px); opacity: 1; }100% { transform: translate(724px, 114px); opacity: 1; }}
-@diffuse-52-1-3447 {0% { transform: translate(10px, 100px); opacity: 0.8; }7% { transform: translate(52px, 114px); opacity: 1; }14% { transform: translate(52px, 86px); opacity: 1; }21% { transform: translate(66px, 58px); opacity: 1; }28% { transform: translate(108px, 44px); opacity: 1; }35% { transform: translate(122px, 86px); opacity: 1; }42% { transform: translate(164px, 114px); opacity: 1; }49% { transform: translate(150px, 86px); opacity: 1; }56% { transform: translate(164px, 114px); opacity: 1; }63% { transform: translate(178px, 114px); opacity: 1; }70% { transform: translate(192px, 114px); opacity: 1; }77% { transform: translate(220px, 100px); opacity: 1; }84% { transform: translate(206px, 114px); opacity: 1; }91% { transform: translate(206px, 114px); opacity: 1; }100% { transform: translate(738px, 44px); opacity: 1; }}
-@diffuse-52-2-464 {0% { transform: translate(10px, 100px); opacity: 0.8; }9% { transform: translate(38px, 114px); opacity: 1; }18% { transform: translate(38px, 100px); opacity: 1; }26% { transform: translate(24px, 58px); opacity: 1; }36% { transform: translate(52px, 44px); opacity: 1; }45% { transform: translate(38px, 86px); opacity: 1; }53% { transform: translate(52px, 100px); opacity: 1; }63% { transform: translate(94px, 100px); opacity: 1; }72% { transform: translate(108px, 58px); opacity: 1; }81% { transform: translate(108px, 100px); opacity: 1; }90% { transform: translate(108px, 58px); opacity: 1; }100% { transform: translate(738px, 58px); opacity: 1; }}
-@diffuse-52-3-9117 {0% { transform: translate(10px, 58px); opacity: 0.8; }8% { transform: translate(24px, 30px); opacity: 1; }16% { transform: translate(38px, 30px); opacity: 1; }24% { transform: translate(38px, 30px); opacity: 1; }33% { transform: translate(52px, 72px); opacity: 1; }41% { transform: translate(52px, 58px); opacity: 1; }49% { transform: translate(66px, 58px); opacity: 1; }57% { transform: translate(94px, 30px); opacity: 1; }66% { transform: translate(136px, 30px); opacity: 1; }74% { transform: translate(178px, 44px); opacity: 1; }82% { transform: translate(178px, 30px); opacity: 1; }90% { transform: translate(164px, 30px); opacity: 1; }100% { transform: translate(738px, 72px); opacity: 1; }}</style>
+            <rect x="10" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="10" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="10" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="10" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="10" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="10" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="10" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="24" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="24" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="24" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="24" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="24" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="24" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="24" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="38" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="38" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="38" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="38" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="38" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="38" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="38" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="52" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="52" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="52" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="52" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="52" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="52" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="52" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="66" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="66" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="66" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="66" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="66" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="66" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="66" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="80" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="80" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="80" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="80" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="80" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="80" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="80" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="94" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="94" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="94" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="94" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="94" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="94" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="94" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="108" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="108" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="108" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="108" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="108" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="108" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="108" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="122" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="122" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="122" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="122" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="122" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="122" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="122" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="136" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="136" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="136" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="136" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="136" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="136" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="136" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="150" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="150" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="150" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="150" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="150" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="150" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="150" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="164" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="164" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="164" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="164" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="164" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="164" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="164" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="178" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="178" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="178" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="178" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="178" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="178" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="178" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="192" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="192" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="192" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="192" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="192" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="192" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="192" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="206" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="206" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="206" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="206" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="206" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="206" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="206" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="220" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="220" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="220" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="220" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="220" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="220" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="220" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="234" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="234" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="234" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="234" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="234" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="234" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="234" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="248" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="248" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="248" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="248" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="248" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="248" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="248" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="262" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="262" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="262" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="262" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="262" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="262" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="262" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="276" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="276" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="276" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="276" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="276" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="276" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="276" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="290" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="290" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="290" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="290" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="290" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="290" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="290" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="304" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="304" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="304" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="304" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="304" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="304" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="304" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="318" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="318" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="318" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="318" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="318" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="318" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="318" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="332" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="332" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="332" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="332" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="332" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="332" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="332" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="346" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="346" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="346" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="346" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="346" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="346" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="346" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="360" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="360" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="360" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="360" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="360" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="360" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="360" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="374" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="374" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="374" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="374" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="374" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="374" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="374" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="388" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="388" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="388" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="388" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="388" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="388" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="388" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="402" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="402" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="402" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="402" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="402" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="402" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="402" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="416" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="416" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="416" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="416" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="416" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="416" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="416" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="430" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="430" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="430" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="430" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="430" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="430" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="430" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="444" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="444" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="444" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="444" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="444" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="444" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="444" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="458" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="458" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="458" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="458" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="458" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="458" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="458" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="472" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="472" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="472" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="472" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="472" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="472" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="472" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="486" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="486" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="486" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="486" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="486" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="486" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="486" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="500" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="500" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="500" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="500" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="500" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="500" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="500" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="514" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="514" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="514" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="514" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="514" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="514" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="514" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="528" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="528" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="528" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="528" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="528" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="528" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="528" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="542" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="542" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="542" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="542" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="542" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="542" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="542" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="556" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="556" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="556" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="556" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="556" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="556" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="556" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="570" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="570" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="570" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="570" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="570" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="570" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="570" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="584" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="584" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="584" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="584" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="584" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="584" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="584" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="598" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="598" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="598" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="598" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="598" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="598" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="598" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="612" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="612" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="612" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="612" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="612" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="612" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="612" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="626" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="626" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="626" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="626" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="626" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="626" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="626" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="640" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="640" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="640" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="640" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="640" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="640" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="640" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="654" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="654" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="654" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="654" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="654" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="654" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="654" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="668" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="668" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="668" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="668" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="668" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="668" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="668" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="682" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="682" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="682" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="682" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="682" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="682" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="682" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="696" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="696" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="696" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="696" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="696" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="696" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="696" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="710" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="710" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="710" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="710" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="710" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="710" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="710" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="724" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="724" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="724" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="724" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="724" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="724" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="724" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="738" y="30" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="738" y="44" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="738" y="58" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="738" y="72" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="738" y="86" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="738" y="100" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/><rect x="738" y="114" width="10" height="10" rx="2" fill="#161b22" opacity="0.3"/>
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="24" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-1-4-3655;
-                    animation-duration: 5.2538750318092555s;
-                    animation-delay: 2.8125024223127917s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -48px; 
+                    --start-y: 49px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.883677914447154s;
+                    animation-delay: 2.5613318593815313s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="178" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-12-6-4355;
-                    animation-duration: 8.139532749362404s;
-                    animation-delay: 1.03739125626195s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -209px; 
+                    --start-y: -19px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.464180540449965s;
+                    animation-delay: 2.4557119550998934s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="206" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-14-1-7587;
-                    animation-duration: 8.291920758984634s;
-                    animation-delay: 1.712628093143549s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -221px; 
+                    --start-y: -44px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.0364635049599586s;
+                    animation-delay: 2.641891379476493s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="206" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-14-3-1034;
-                    animation-duration: 8.497434143264714s;
-                    animation-delay: 2.160319663780399s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -219px; 
+                    --start-y: 12px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.373146500391726s;
+                    animation-delay: 2.5180284522202987s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="234" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-16-2-3221;
-                    animation-duration: 8.548303293250536s;
-                    animation-delay: 1.7745553467884543s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -244px; 
+                    --start-y: 15px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.694397646740044s;
+                    animation-delay: 2.309248245333986s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="290" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-20-3-2879;
-                    animation-duration: 10.66131054622702s;
-                    animation-delay: 1.1865630107843064s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -303px; 
+                    --start-y: 45px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.3248987973549013s;
+                    animation-delay: 0.24180658029480506s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="318" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-22-2-5430;
-                    animation-duration: 10.109751055478243s;
-                    animation-delay: 1.1172372531392802s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -355px; 
+                    --start-y: -38px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.494253030815464s;
+                    animation-delay: 0.7273214830685143s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#006d32" class="box"
+            <rect x="332" y="58" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-23-2-6352;
-                    animation-duration: 11.68140071015614s;
-                    animation-delay: 2.2729313387865435s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -351px; 
+                    --start-y: -21px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.644116582342748s;
+                    animation-delay: 2.5001165465303092s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="332" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-23-3-9595;
-                    animation-duration: 11.179287129131977s;
-                    animation-delay: 2.0068114300795927s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -375px; 
+                    --start-y: 35px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.6654698132154s;
+                    animation-delay: 1.2060196342217782s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#26a641" class="box"
+            <rect x="346" y="58" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-24-2-2753;
-                    animation-duration: 10.7478291640169s;
-                    animation-delay: 0.43174957215684684s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -392px; 
+                    --start-y: -31px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.9660474274217625s;
+                    animation-delay: 0.5739455629892583s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="402" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-28-1-7938;
-                    animation-duration: 12.654902253817653s;
-                    animation-delay: 2.3026091177781662s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -447px; 
+                    --start-y: 39px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.5475512157567546s;
+                    animation-delay: 1.7890841336974976s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#006d32" class="box"
+            <rect x="402" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-28-3-1327;
-                    animation-duration: 12.77755888545075s;
-                    animation-delay: 0.28539873902935997s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -419px; 
+                    --start-y: -32px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.300596856158979s;
+                    animation-delay: 1.0826888201081424s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="402" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-28-5-8417;
-                    animation-duration: 13.334639962796555s;
-                    animation-delay: 0.9701907930023548s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -444px; 
+                    --start-y: -3px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.8319975534718864s;
+                    animation-delay: 1.984596874239758s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#006d32" class="box"
+            <rect x="430" y="44" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-30-1-2588;
-                    animation-duration: 13.55795964291207s;
-                    animation-delay: 0.19719669721590738s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -471px; 
+                    --start-y: -23px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.6199678201828545s;
+                    animation-delay: 1.4117262799124637s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="430" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-30-2-8965;
-                    animation-duration: 12.780126141058512s;
-                    animation-delay: 0.31179872898239913s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -462px; 
+                    --start-y: -21px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.7937427622726103s;
+                    animation-delay: 1.7427262178016762s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="556" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-39-5-4810;
-                    animation-duration: 15.438498677997291s;
-                    animation-delay: 0.7228710253952808s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -585px; 
+                    --start-y: -7px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.818015847572583s;
+                    animation-delay: 2.542711626318973s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#006d32" class="box"
+            <rect x="584" y="86" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-41-4-1422;
-                    animation-duration: 16.52402427757963s;
-                    animation-delay: 2.828875237387673s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -620px; 
+                    --start-y: 50px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.558040797553314s;
+                    animation-delay: 1.4952063982584536s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="584" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-41-5-8308;
-                    animation-duration: 16.450494070858127s;
-                    animation-delay: 2.1920027506056448s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -617px; 
+                    --start-y: -18px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.442336927037464s;
+                    animation-delay: 2.806113875523212s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="584" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-41-6-368;
-                    animation-duration: 16.290638700297105s;
-                    animation-delay: 1.9110965861515972s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -625px; 
+                    --start-y: 8px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.09455796892598s;
+                    animation-delay: 1.5908784269821328s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#39d353" class="box"
+            <rect x="598" y="58" width="10" height="10" rx="2" fill="#39d353" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-42-2-1359;
-                    animation-duration: 16.91438827294456s;
-                    animation-delay: 2.0606373295374643s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -621px; 
+                    --start-y: 41px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.928865060710823s;
+                    animation-delay: 1.3612924795362316s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#006d32" class="box"
+            <rect x="598" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-42-3-1779;
-                    animation-duration: 16.790737341818136s;
-                    animation-delay: 2.380053265012503s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -616px; 
+                    --start-y: 15px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.125465996062392s;
+                    animation-delay: 0.7158018555141165s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#006d32" class="box"
+            <rect x="626" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-44-3-4124;
-                    animation-duration: 17.034725189918092s;
-                    animation-delay: 2.264282647637878s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -665px; 
+                    --start-y: -8px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.047991475321149s;
+                    animation-delay: 2.9678930820147373s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="626" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-44-4-8907;
-                    animation-duration: 17.74069606139383s;
-                    animation-delay: 1.0805147863747735s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -671px; 
+                    --start-y: 28px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.138236594575165s;
+                    animation-delay: 2.772528126331023s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#006d32" class="box"
+            <rect x="626" y="100" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-44-5-3075;
-                    animation-duration: 16.979210788387356s;
-                    animation-delay: 0.598358343361995s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -641px; 
+                    --start-y: 34px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.116828098682332s;
+                    animation-delay: 1.3431620671221198s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="640" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-45-0-6576;
-                    animation-duration: 17.59909574913423s;
-                    animation-delay: 2.306768881193174s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -681px; 
+                    --start-y: -43px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.178743812602899s;
+                    animation-delay: 2.8648211980803233s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="640" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-45-1-3575;
-                    animation-duration: 17.03580273633767s;
-                    animation-delay: 1.07621013721767s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -651px; 
+                    --start-y: -29px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.7864701258125617s;
+                    animation-delay: 0.9894789822543157s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="640" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-45-4-537;
-                    animation-duration: 18.48586224539026s;
-                    animation-delay: 1.9273675715210659s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -665px; 
+                    --start-y: -8px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.722947563641125s;
+                    animation-delay: 1.8978731566997322s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="654" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-46-4-9922;
-                    animation-duration: 17.75922632767439s;
-                    animation-delay: 2.3291564048310747s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -694px; 
+                    --start-y: 17px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.5974331859063704s;
+                    animation-delay: 0.5275786379375712s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="668" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-47-4-3236;
-                    animation-duration: 18.63604702939788s;
-                    animation-delay: 1.3281934403049576s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -683px; 
+                    --start-y: 31px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.659455142200847s;
+                    animation-delay: 0.15526312822975752s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="668" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-47-5-3524;
-                    animation-duration: 18.08671026062692s;
-                    animation-delay: 2.835429582197938s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -698px; 
+                    --start-y: 13px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.473226531428648s;
+                    animation-delay: 1.1957266934060664s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="682" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-48-2-5112;
-                    animation-duration: 19.031769035487883s;
-                    animation-delay: 0.3161037183217573s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -732px; 
+                    --start-y: -24px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.346706170791988s;
+                    animation-delay: 1.3527947873889634s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="682" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-48-3-3194;
-                    animation-duration: 17.90524046907796s;
-                    animation-delay: 2.8738188523144967s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -696px; 
+                    --start-y: 37px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.051107528860184s;
+                    animation-delay: 2.0646313171609725s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="710" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-50-1-5482;
-                    animation-duration: 18.57393108555908s;
-                    animation-delay: 0.9442704073750581s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -754px; 
+                    --start-y: -12px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.477157961134328s;
+                    animation-delay: 1.1562255140423936s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="710" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-50-2-4956;
-                    animation-duration: 18.550274800896094s;
-                    animation-delay: 0.8636566255688737s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -735px; 
+                    --start-y: 4px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.9760071439440905s;
+                    animation-delay: 1.8286888935202539s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="710" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-50-4-5539;
-                    animation-duration: 19.382667444909355s;
-                    animation-delay: 2.206230595070907s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -749px; 
+                    --start-y: 41px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.6218822188424635s;
+                    animation-delay: 1.1833609852954305s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="710" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-50-5-9912;
-                    animation-duration: 19.618112998013782s;
-                    animation-delay: 1.0656282659831786s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -752px; 
+                    --start-y: 42px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.033164629887934s;
+                    animation-delay: 2.7480382385305733s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="724" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-51-1-1941;
-                    animation-duration: 19.30242621998431s;
-                    animation-delay: 2.0784344892775364s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -737px; 
+                    --start-y: -15px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.972444596659023s;
+                    animation-delay: 0.5100483241949154s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#006d32" class="box"
+            <rect x="724" y="58" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-51-2-7667;
-                    animation-duration: 19.383118934841015s;
-                    animation-delay: 2.2271151601673935s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -772px; 
+                    --start-y: 46px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.6679631643910304s;
+                    animation-delay: 1.8968662956270048s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#26a641" class="box"
+            <rect x="724" y="72" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-51-3-6255;
-                    animation-duration: 19.220340097590775s;
-                    animation-delay: 0.21638066840251136s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -765px; 
+                    --start-y: 41px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.859913964475928s;
+                    animation-delay: 2.7505292893797435s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#39d353" class="box"
+            <rect x="724" y="86" width="10" height="10" rx="2" fill="#39d353" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-51-4-396;
-                    animation-duration: 19.425820132169086s;
-                    animation-delay: 2.6282029252621153s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -749px; 
+                    --start-y: 24px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.0609308397233086s;
+                    animation-delay: 2.1954900153726635s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#26a641" class="box"
+            <rect x="724" y="100" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-51-5-2672;
-                    animation-duration: 19.171963694336487s;
-                    animation-delay: 2.036649434087418s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -737px; 
+                    --start-y: 5px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.7440178252834597s;
+                    animation-delay: 1.4012171595661862s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#0e4429" class="box"
+            <rect x="724" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-51-6-640;
-                    animation-duration: 19.430811990762592s;
-                    animation-delay: 1.5711081573687526s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -766px; 
+                    --start-y: -38px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.8606270712325887s;
+                    animation-delay: 2.2032142290429206s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#006d32" class="box"
+            <rect x="738" y="44" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-52-1-3447;
-                    animation-duration: 19.41285088264595s;
-                    animation-delay: 2.941822259575761s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -775px; 
+                    --start-y: -49px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 3.93488311819054s;
+                    animation-delay: 2.8198275539798776s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#26a641" class="box"
+            <rect x="738" y="58" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-52-2-464;
-                    animation-duration: 19.905197451108442s;
-                    animation-delay: 2.842465980173623s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -756px; 
+                    --start-y: 31px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 2.9318258601818163s;
+                    animation-delay: 2.6957125281215815s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
-            <rect width="10" height="10" rx="2" fill="#39d353" class="box"
+            <rect x="738" y="72" width="10" height="10" rx="2" fill="#39d353" class="box"
                 style="
-                    /* CRITICAL: No x/y attributes. Position is ONLY controlled by CSS transform. */
-                    animation-name: diffuse-52-3-9117;
-                    animation-duration: 20.511993846771258s;
-                    animation-delay: 1.242038145177316s;
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -760px; 
+                    --start-y: 6px; 
+
+                    /* Animation styles */
+                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
+                    animation-duration: 4.102361762313309s;
+                    animation-delay: 2.3320042543113604s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: linear;
+                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
+                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
                 "
             />
             
