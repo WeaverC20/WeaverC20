@@ -11,7 +11,8 @@ This animation shows my GitHub contributions as a gas-phase diffusion simulation
 
 Each “molecule” starts on the left and undergoes a random walk—bouncing, permeating, and drifting across the lattice—just like a hydrogen or deuterium atom moving through a material.
 
-<p align="center"> <!-- CHANGE: Switched from .svg (which GitHub disables animation for) to .gif --> <img src="./output/diffusion.gif" alt="Animated diffusion of my GitHub contributions" width="100%" /> </p>
+## ⚗️ Contribution Diffusion
+![Diffusion Graph](diffusion_graph.svg)
 
 👨‍🔬 About Me
 
