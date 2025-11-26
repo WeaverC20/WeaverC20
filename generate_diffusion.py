@@ -67,7 +67,7 @@ def fetch_contributions(username, token):
     return data['data']['user']['contributionsCollection']['contributionCalendar']['weeks']
 
 def generate_svg(weeks):
-    """Generates the SVG content with animated contribution rectangles."""
+    """Generates the SVG content with animated contribution rectangles using a single shared keyframe."""
     rects = []
     
     # Generate static grid background
@@ -76,31 +76,46 @@ def generate_svg(weeks):
         for r in range(GRID_ROWS):
             bg_x = c * RECT_SPACING + CHART_OFFSET_X
             bg_y = r * RECT_SPACING + CHART_OFFSET_Y
-            # Background grid visibility remains 0.3
             background_grid.append(f'<rect x="{bg_x}" y="{bg_y}" width="{RECT_SIZE}" height="{RECT_SIZE}" rx="2" fill="{COLORS["NONE"]}" opacity="0.3"/>')
 
     animated_squares_count = 0
+    FIXED_HOPS = 5 # Used by steps() for the number of discrete jumps
+    
+    # --- Cluster Start Coordinates ---
+    # Center the starting cluster vertically (Row 3, which is 4th row)
+    CLUSTER_CENTER_Y_PX = 3 * RECT_SPACING + CHART_OFFSET_Y 
+    
+    # Cluster start coordinate: Visible on the left side
+    CLUSTER_START_X_PX = 100 
 
     for w_idx, week in enumerate(weeks):
         for day in week['contributionDays']:
             if day['contributionLevel'] == "NONE":
-                continue # Only animate contributed days
+                continue 
             
             color = COLORS.get(day['contributionLevel'], "#161b22")
             
-            # Final position set by x and y attributes
-            final_x_px = w_idx * RECT_SPACING + CHART_OFFSET_X
+            # --- 1. Final Pixel Coordinates ---
+            final_col = w_idx
+            final_x_px = final_col * RECT_SPACING + CHART_OFFSET_X
             final_y_px = day['weekday'] * RECT_SPACING + CHART_OFFSET_Y
             
-            # --- Animation Variables (Passed via CSS Custom Properties) ---
+            # --- 2. Start Positions: Concentrated Cluster off-screen left ---
             
-            # Start position offset (relative to final position)
-            # Starting on the far left, slightly offset vertically
-            start_x_offset = -final_x_px - random.randint(10, 50) 
-            start_y_offset = random.randint(-50, 50) 
+            # WIDER SPREAD: Increased range for a large dispersed starting area
+            jitter_x = random.uniform(-100, 100)
+            jitter_y = random.uniform(-50, 50)
+
+            # Calculate the required relative transform from the final position to the cluster start position
+            # X-offset: (Fixed Cluster Start X + Jitter) - Final X
+            start_x_offset = (CLUSTER_START_X_PX + jitter_x) - final_x_px
             
-            # Duration and Delay
-            animation_duration = random.uniform(2.5, 5.0) 
+            # Y-offset: (Fixed Cluster Center Y + Jitter) - Final Y
+            start_y_offset = (CLUSTER_CENTER_Y_PX + jitter_y) - final_y_px
+
+            # --- 3. Animation Timing ---
+            # Longer duration for columns further to the right
+            duration = random.uniform(3.0, 7.0) + (final_col * 0.1) 
             delay = random.uniform(0, 3.0) 
             
             rect = f"""
@@ -111,36 +126,43 @@ def generate_svg(weeks):
                     --start-y: {start_y_offset}px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: {animation_duration}s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: {duration}s;
                     animation-delay: {delay}s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps({FIXED_HOPS}, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             """
             rects.append(rect)
             animated_squares_count += 1
 
-    # --- SINGLE, SHARED KEYFRAME DEFINITION ---
-    shared_keyframe = """
-    @keyframes diffuse-motion {
-        /* Start position is defined by the unique CSS variables --start-x and --start-y */
-        0% { transform: translate(var(--start-x), var(--start-y)); opacity: 0; }
-        50% { opacity: 1; }
-        /* End position is (0, 0) relative to the rect's static x/y attributes */
-        100% { transform: translate(0, 0); opacity: 1; }
-    }
+    # --- SINGLE, SHARED KEYFRAME DEFINITION (Very simple) ---
+    shared_keyframe = f"""
+    @keyframes diffusion-jump {{
+        /* 0%: Start at the unique offset defined by the element's CSS variables */
+        0% {{ 
+            transform: translate(var(--start-x), var(--start-y)); 
+            opacity: 1; /* FIX 2: Make it visible immediately upon animation start */
+        }}
+        /* 100%: End at relative (0, 0), which is the final static x/y position */
+        100% {{ 
+            transform: translate(0, 0); 
+            opacity: 1; 
+        }}
+    }}
     """
     
-    # Define a default style for all boxes, wrapped in CDATA for robust XML parsing
+    # Wrap the minimal CSS in CDATA for robust XML parsing
     full_css_style = f"""
     <style type="text/css">
     <![CDATA[
     .box {{ 
         animation-fill-mode: forwards; 
-        /* Important for SVG: ensures transforms are relative to the element */
+        /* FIX 1: Set initial opacity to 0 to prevent the FOUC flicker at the final position */
+        opacity: 0;
         transform-box: fill-box; 
         transform-origin: center;
     }}
@@ -162,7 +184,6 @@ def generate_svg(weeks):
     </svg>
     """
     
-    # Return the SVG content and the count of animated squares for debugging
     return svg_content, animated_squares_count
 
 def main():

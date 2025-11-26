@@ -7,17 +7,23 @@
     <![CDATA[
     .box { 
         animation-fill-mode: forwards; 
-        /* Important for SVG: ensures transforms are relative to the element */
+        /* FIX 1: Set initial opacity to 0 to prevent the FOUC flicker at the final position */
+        opacity: 0;
         transform-box: fill-box; 
         transform-origin: center;
     }
     
-    @keyframes diffuse-motion {
-        /* Start position is defined by the unique CSS variables --start-x and --start-y */
-        0% { transform: translate(var(--start-x), var(--start-y)); opacity: 0; }
-        50% { opacity: 1; }
-        /* End position is (0, 0) relative to the rect's static x/y attributes */
-        100% { transform: translate(0, 0); opacity: 1; }
+    @keyframes diffusion-jump {
+        /* 0%: Start at the unique offset defined by the element's CSS variables */
+        0% { 
+            transform: translate(var(--start-x), var(--start-y)); 
+            opacity: 1; /* FIX 2: Make it visible immediately upon animation start */
+        }
+        /* 100%: End at relative (0, 0), which is the final static x/y position */
+        100% { 
+            transform: translate(0, 0); 
+            opacity: 1; 
+        }
     }
     
     ]]>
@@ -29,720 +35,765 @@
             <rect x="24" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -48px; 
-                    --start-y: 49px; 
+                    --start-x: 32.34813263716283px; 
+                    --start-y: -61.86850398486274px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.883677914447154s;
-                    animation-delay: 2.5613318593815313s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 3.9501101250487483s;
+                    animation-delay: 1.8280315310893873s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="178" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -209px; 
-                    --start-y: -19px; 
+                    --start-x: -129.82848990534484px; 
+                    --start-y: -22.991473908893482px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.464180540449965s;
-                    animation-delay: 2.4557119550998934s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 7.609417428699212s;
+                    animation-delay: 1.1526363559135122s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="206" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -221px; 
-                    --start-y: -44px; 
+                    --start-x: -170.8351375877135px; 
+                    --start-y: 29.774919937463807px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.0364635049599586s;
-                    animation-delay: 2.641891379476493s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 7.042458594454717s;
+                    animation-delay: 2.899354319311124s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="206" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -219px; 
-                    --start-y: 12px; 
+                    --start-x: -10.313077169138921px; 
+                    --start-y: 34.66369255576021px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.373146500391726s;
-                    animation-delay: 2.5180284522202987s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 6.578582993427112s;
+                    animation-delay: 2.4259169620445866s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="234" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -244px; 
-                    --start-y: 15px; 
+                    --start-x: -216.9315614501001px; 
+                    --start-y: -12.008621542594753px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.694397646740044s;
-                    animation-delay: 2.309248245333986s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 6.1934585821785095s;
+                    animation-delay: 0.050392328892896576s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="290" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -303px; 
-                    --start-y: 45px; 
+                    --start-x: -274.48095118600133px; 
+                    --start-y: 7.471623383941903px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.3248987973549013s;
-                    animation-delay: 0.24180658029480506s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 6.036220475045139s;
+                    animation-delay: 2.1907620614246093s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="318" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -355px; 
-                    --start-y: -38px; 
+                    --start-x: -191.1669125201343px; 
+                    --start-y: 48.30259215161074px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.494253030815464s;
-                    animation-delay: 0.7273214830685143s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 8.077892899335342s;
+                    animation-delay: 0.39389823078295005s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="332" y="58" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -351px; 
-                    --start-y: -21px; 
+                    --start-x: -170.05885596436357px; 
+                    --start-y: 56.88461990909293px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.644116582342748s;
-                    animation-delay: 2.5001165465303092s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 7.684062046376109s;
+                    animation-delay: 1.3716527211405514s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="332" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -375px; 
-                    --start-y: 35px; 
+                    --start-x: -301.36973781240897px; 
+                    --start-y: -39.17858120685498px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.6654698132154s;
-                    animation-delay: 1.2060196342217782s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 7.023659694315297s;
+                    animation-delay: 1.0300996284129615s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="346" y="58" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -392px; 
-                    --start-y: -31px; 
+                    --start-x: -172.39349110343514px; 
+                    --start-y: 0.306285889330006px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.9660474274217625s;
-                    animation-delay: 0.5739455629892583s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 6.573613106563257s;
+                    animation-delay: 1.8232136948383233s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="402" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -447px; 
-                    --start-y: 39px; 
+                    --start-x: -386.72456309198344px; 
+                    --start-y: 60.24249458187454px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.5475512157567546s;
-                    animation-delay: 1.7890841336974976s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 9.090116884808207s;
+                    animation-delay: 1.6472607517860895s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="402" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -419px; 
-                    --start-y: -32px; 
+                    --start-x: -400.6266249295614px; 
+                    --start-y: -17.919285384652596px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.300596856158979s;
-                    animation-delay: 1.0826888201081424s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 7.133431750729287s;
+                    animation-delay: 0.6244666807853009s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="402" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -444px; 
-                    --start-y: -3px; 
+                    --start-x: -230.8241739403545px; 
+                    --start-y: -2.9788551745664478px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.8319975534718864s;
-                    animation-delay: 1.984596874239758s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 7.427372175496476s;
+                    animation-delay: 2.407366546649836s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="430" y="44" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -471px; 
-                    --start-y: -23px; 
+                    --start-x: -385.8591493355761px; 
+                    --start-y: 5.120021875344918px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.6199678201828545s;
-                    animation-delay: 1.4117262799124637s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 7.764912437562188s;
+                    animation-delay: 0.9405182887377729s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="430" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -462px; 
-                    --start-y: -21px; 
+                    --start-x: -318.9986919480634px; 
+                    --start-y: 4.579298086658611px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.7937427622726103s;
-                    animation-delay: 1.7427262178016762s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 8.888049059343649s;
+                    animation-delay: 0.5263788723274818s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="556" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -585px; 
-                    --start-y: -7px; 
+                    --start-x: -410.75716915371555px; 
+                    --start-y: -62.806123851038286px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.818015847572583s;
-                    animation-delay: 2.542711626318973s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 9.994596497873117s;
+                    animation-delay: 0.0027579033893483373s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="584" y="86" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -620px; 
-                    --start-y: 50px; 
+                    --start-x: -398.260718340215px; 
+                    --start-y: -51.40962163848673px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.558040797553314s;
-                    animation-delay: 1.4952063982584536s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 7.376346399459262s;
+                    animation-delay: 2.7465658754804734s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="584" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -617px; 
-                    --start-y: -18px; 
+                    --start-x: -552.1799293193437px; 
+                    --start-y: 21.81032990523802px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.442336927037464s;
-                    animation-delay: 2.806113875523212s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 10.815946769549857s;
+                    animation-delay: 2.615855077246579s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="584" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -625px; 
-                    --start-y: 8px; 
+                    --start-x: -511.4574419141441px; 
+                    --start-y: -88.43061129250586px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.09455796892598s;
-                    animation-delay: 1.5908784269821328s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 9.254921204604656s;
+                    animation-delay: 0.6030695663339612s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="598" y="58" width="10" height="10" rx="2" fill="#39d353" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -621px; 
-                    --start-y: 41px; 
+                    --start-x: -458.015672378588px; 
+                    --start-y: -10.867137775344894px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.928865060710823s;
-                    animation-delay: 1.3612924795362316s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 7.575422432439981s;
+                    animation-delay: 2.190244124665698s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="598" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -616px; 
-                    --start-y: 15px; 
+                    --start-x: -418.963867784623px; 
+                    --start-y: -37.04636803579392px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.125465996062392s;
-                    animation-delay: 0.7158018555141165s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 11.192550330325425s;
+                    animation-delay: 1.7468102058046535s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="626" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -665px; 
-                    --start-y: -8px; 
+                    --start-x: -528.2192623276718px; 
+                    --start-y: -35.20999832596067px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.047991475321149s;
-                    animation-delay: 2.9678930820147373s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 9.16160576378973s;
+                    animation-delay: 0.28723736709048453s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="626" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -671px; 
-                    --start-y: 28px; 
+                    --start-x: -431.4299678054171px; 
+                    --start-y: -3.2163261078191283px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.138236594575165s;
-                    animation-delay: 2.772528126331023s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 10.299780268626243s;
+                    animation-delay: 1.2624316311252497s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="626" y="100" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -641px; 
-                    --start-y: 34px; 
+                    --start-x: -551.8884137265919px; 
+                    --start-y: -9.679271886057634px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.116828098682332s;
-                    animation-delay: 1.3431620671221198s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 9.508302915182874s;
+                    animation-delay: 0.4983317288798552s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="640" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -681px; 
-                    --start-y: -43px; 
+                    --start-x: -442.4866676004612px; 
+                    --start-y: 58.06751732969536px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.178743812602899s;
-                    animation-delay: 2.8648211980803233s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 10.250040435738612s;
+                    animation-delay: 1.097120913951667s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="640" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -651px; 
-                    --start-y: -29px; 
+                    --start-x: -464.51777371833055px; 
+                    --start-y: 68.73614183583707px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.7864701258125617s;
-                    animation-delay: 0.9894789822543157s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 11.481260858571085s;
+                    animation-delay: 0.4637808721037293s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="640" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -665px; 
-                    --start-y: -8px; 
+                    --start-x: -479.0431392994282px; 
+                    --start-y: 2.329380291262183px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.722947563641125s;
-                    animation-delay: 1.8978731566997322s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 9.987928024145708s;
+                    animation-delay: 2.4796431233512775s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="654" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -694px; 
-                    --start-y: 17px; 
+                    --start-x: -535.4616454976539px; 
+                    --start-y: -32.79499381365612px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.5974331859063704s;
-                    animation-delay: 0.5275786379375712s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 8.319740701783832s;
+                    animation-delay: 0.22080560032874674s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="668" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -683px; 
-                    --start-y: 31px; 
+                    --start-x: -598.9948545085132px; 
+                    --start-y: -47.12021723795839px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.659455142200847s;
-                    animation-delay: 0.15526312822975752s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 8.880704427648734s;
+                    animation-delay: 2.838424503049719s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="668" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -698px; 
-                    --start-y: 13px; 
+                    --start-x: -627.9666863410292px; 
+                    --start-y: -10.474162142249483px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.473226531428648s;
-                    animation-delay: 1.1957266934060664s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 11.09341743009777s;
+                    animation-delay: 1.3613436343172367s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="682" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -732px; 
-                    --start-y: -24px; 
+                    --start-x: -500.5591471326997px; 
+                    --start-y: -9.313451078749537px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.346706170791988s;
-                    animation-delay: 1.3527947873889634s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 9.406687998327879s;
+                    animation-delay: 2.116685286184936s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="682" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -696px; 
-                    --start-y: 37px; 
+                    --start-x: -666.0089725482958px; 
+                    --start-y: -6.955613055034917px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.051107528860184s;
-                    animation-delay: 2.0646313171609725s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 8.445118323665433s;
+                    animation-delay: 1.7593961860409264s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="710" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -754px; 
-                    --start-y: -12px; 
+                    --start-x: -557.8350422634285px; 
+                    --start-y: 63.420519674038175px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.477157961134328s;
-                    animation-delay: 1.1562255140423936s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 8.348675079246158s;
+                    animation-delay: 1.5127203115711596s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="710" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -735px; 
-                    --start-y: 4px; 
+                    --start-x: -537.0325018795029px; 
+                    --start-y: -10.678880417971328px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.9760071439440905s;
-                    animation-delay: 1.8286888935202539s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 10.914729240768533s;
+                    animation-delay: 2.388425663529909s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="710" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -749px; 
-                    --start-y: 41px; 
+                    --start-x: -644.714239910939px; 
+                    --start-y: -7.786475727976153px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.6218822188424635s;
-                    animation-delay: 1.1833609852954305s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 11.81545349191568s;
+                    animation-delay: 1.990471319970883s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="710" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -752px; 
-                    --start-y: 42px; 
+                    --start-x: -514.7874158024028px; 
+                    --start-y: -24.7389062415388px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.033164629887934s;
-                    animation-delay: 2.7480382385305733s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 8.748505382982799s;
+                    animation-delay: 1.0887742062538057s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="724" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -737px; 
-                    --start-y: -15px; 
+                    --start-x: -653.0884724235635px; 
+                    --start-y: -7.870675508268555px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.972444596659023s;
-                    animation-delay: 0.5100483241949154s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 9.931771072081986s;
+                    animation-delay: 0.2078311909755971s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="724" y="58" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -772px; 
-                    --start-y: 46px; 
+                    --start-x: -549.1165528092214px; 
+                    --start-y: 50.84345958488592px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.6679631643910304s;
-                    animation-delay: 1.8968662956270048s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 10.562483102665581s;
+                    animation-delay: 1.991157815759582s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="724" y="72" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -765px; 
-                    --start-y: 41px; 
+                    --start-x: -582.112698332124px; 
+                    --start-y: -41.290371545548325px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.859913964475928s;
-                    animation-delay: 2.7505292893797435s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 11.217057794860327s;
+                    animation-delay: 2.76570972700054s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="724" y="86" width="10" height="10" rx="2" fill="#39d353" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -749px; 
-                    --start-y: 24px; 
+                    --start-x: -528.286685433761px; 
+                    --start-y: -2.276727684492471px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.0609308397233086s;
-                    animation-delay: 2.1954900153726635s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 8.364085167092009s;
+                    animation-delay: 0.4681711781073935s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="724" y="100" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -737px; 
-                    --start-y: 5px; 
+                    --start-x: -536.8865563857373px; 
+                    --start-y: 7.510594108110396px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.7440178252834597s;
-                    animation-delay: 1.4012171595661862s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 11.289353093313252s;
+                    animation-delay: 2.215918227064055s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="724" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -766px; 
-                    --start-y: -38px; 
+                    --start-x: -561.5318301632816px; 
+                    --start-y: -75.36563915346115px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.8606270712325887s;
-                    animation-delay: 2.2032142290429206s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 10.757741474151796s;
+                    animation-delay: 0.5521157081525848s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="738" y="44" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -775px; 
-                    --start-y: -49px; 
+                    --start-x: -628.308964507299px; 
+                    --start-y: 29.702111859732696px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 3.93488311819054s;
-                    animation-delay: 2.8198275539798776s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 11.037996136191186s;
+                    animation-delay: 0.8754254338354582s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="738" y="58" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -756px; 
-                    --start-y: 31px; 
+                    --start-x: -732.794501305502px; 
+                    --start-y: 56.73769718597178px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 2.9318258601818163s;
-                    animation-delay: 2.6957125281215815s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 9.34819754961088s;
+                    animation-delay: 0.42384186192385065s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
             <rect x="738" y="72" width="10" height="10" rx="2" fill="#39d353" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -760px; 
-                    --start-y: 6px; 
+                    --start-x: -624.6740190083614px; 
+                    --start-y: -46.15939415345656px; 
 
                     /* Animation styles */
-                    animation-name: diffuse-motion; /* All boxes use the same keyframe */
-                    animation-duration: 4.102361762313309s;
-                    animation-delay: 2.3320042543113604s;
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 10.609633667288591s;
+                    animation-delay: 0.9855842483575137s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Smoother animation curve */
-                    animation-iteration-count: infinite; /* Set to infinite for visible testing */
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(5, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
                 "
             />
             
