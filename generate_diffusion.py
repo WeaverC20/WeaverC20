@@ -103,13 +103,11 @@ def generate_svg(weeks):
             total_cols_to_move = final_col - current_col
             
             # Use shorter paths and duration to reduce file size:
-            base_duration = 5.0 # Reduced base time for shorter animations
+            base_duration = 5.0 
             distance_factor = 0.5 * total_cols_to_move 
-            # Smaller random range for duration
             animation_duration = base_duration + distance_factor + random.uniform(1.0, 3.0) 
             
-            # *** CRITICAL FIX: Drastically reducing the number of hops ***
-            # Aim for 5 to 16 hops maximum per particle instead of 10 to 40+
+            # Fixed: Using the optimized, smaller number of hops
             num_hops = max(5, int(total_cols_to_move * 0.5) + random.randint(3, 8))
             
             # --- Biased Random Walk Simulation (Generating the intermediate hops) ---
@@ -122,10 +120,10 @@ def generate_svg(weeks):
                 
                 # BIAS TO THE RIGHT: Increase probability of positive jump if far left
                 if col_diff > 10:
-                    # Far away: Strong bias right (3 right, 1 stay, 1 left)
+                    # Far away: Strong bias right 
                     col_move_options = [1, 2, 3, 0, -1] 
                 elif col_diff > 0:
-                    # Close but not there: Slight bias right (1 right, 1 stay, 1 left)
+                    # Close but not there: Slight bias right 
                     col_move_options = [1, 0, -1] 
                 else:
                     # Already at or past target: Pure random walk
@@ -154,7 +152,6 @@ def generate_svg(weeks):
                 hop_y_px = next_row * RECT_SPACING + CHART_OFFSET_Y
                 
                 # Calculate keyframe percentage based on hop number
-                # We stop slightly early (99%) to allow the final 100% position to snap correctly
                 keyframe_percent = int((i / num_hops) * 99) 
                 keyframes_str += f"{keyframe_percent}% {{ transform: translate({hop_x_px}px, {hop_y_px}px); opacity: 1; }}"
 
@@ -164,12 +161,12 @@ def generate_svg(weeks):
             css_keyframes.append(keyframes_str)
 
             # Assign animation to the rect
-            delay = random.uniform(0, 3.0) # Increased initial delay variance
+            delay = random.uniform(0, 3.0) 
             
             rect = f"""
             <rect width="{RECT_SIZE}" height="{RECT_SIZE}" rx="2" fill="{color}" class="box"
                 style="
-                    /* REMOVED: transform: translate(...) */ 
+                    /* Initial position is controlled solely by the 0% keyframe */
                     animation-name: {keyframe_name};
                     animation-duration: {animation_duration}s;
                     animation-delay: {delay}s;
@@ -178,6 +175,9 @@ def generate_svg(weeks):
                 "
             />
             """
+            # <<<< CRITICAL FIX: APPEND THE RECTANGLE >>>>
+            rects.append(rect)
+
 
     combined_css = "\n".join(css_keyframes)
     full_css_style = f"<style>.box {{ animation-timing-function: linear; animation-fill-mode: forwards; }} {combined_css}</style>"
