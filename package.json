@@ -1,8 +1,0 @@
-{
-  "name": "contrib-diffusion",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "generate": "node scripts/generate-diffusion.mjs"
-  }
-}

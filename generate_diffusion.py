@@ -21,8 +21,8 @@ RECT_SPACING = 14 # Space between centers of squares (10px rect + 4px gap)
 CHART_OFFSET_X = 10
 CHART_OFFSET_Y = 30 # For title
 
-# New: Define the boundaries of the grid for random movement
-GRID_COLS = 53 # Approx 53 weeks in a year
+# Define the boundaries of the grid
+GRID_COLS = 53 # Approx 53 weeks
 GRID_ROWS = 7  # 7 days a week
 
 def fetch_contributions(username, token):
@@ -36,7 +36,6 @@ def fetch_contributions(username, token):
               contributionDays {
                 contributionLevel
                 weekday
-                date # Added date to ensure we get a full year
               }
             }
           }
@@ -54,7 +53,6 @@ def fetch_contributions(username, token):
     data = response.json()
     if 'errors' in data:
         print(f"GraphQL Error: {data['errors']}")
-        # Fallback for errors: return an empty list or handle gracefully
         return []
         
     return data['data']['user']['contributionsCollection']['contributionCalendar']['weeks']
@@ -64,13 +62,13 @@ def generate_svg(weeks):
     css_keyframes = []
     rects = []
     
-    # Generate static grid background (optional, for reference)
+    # Generate static grid background 
     background_grid = []
     for c in range(GRID_COLS):
         for r in range(GRID_ROWS):
             bg_x = c * RECT_SPACING + CHART_OFFSET_X
             bg_y = r * RECT_SPACING + CHART_OFFSET_Y
-            background_grid.append(f'<rect x="{bg_x}" y="{bg_y}" width="{RECT_SIZE}" height="{RECT_SIZE}" rx="2" fill="{COLORS["NONE"]}" opacity="0.5"/>')
+            background_grid.append(f'<rect x="{bg_x}" y="{bg_y}" width="{RECT_SIZE}" height="{RECT_SIZE}" rx="2" fill="{COLORS["NONE"]}" opacity="0.1"/>')
 
 
     for w_idx, week in enumerate(weeks):
@@ -80,74 +78,109 @@ def generate_svg(weeks):
             
             color = COLORS.get(day['contributionLevel'], "#161b22")
             
-            # Final Destination (relative to its own starting point 0,0)
-            final_x = w_idx * RECT_SPACING + CHART_OFFSET_X
-            final_y = day['weekday'] * RECT_SPACING + CHART_OFFSET_Y
+            # 1. Final Destination (Grid Coords)
+            final_col = w_idx
+            final_row = day['weekday']
             
-            # New: Initial Position - all start in the leftmost column randomly
-            start_col = 0
-            start_row = random.randint(0, GRID_ROWS - 1)
-            initial_x = start_col * RECT_SPACING + CHART_OFFSET_X
-            initial_y = start_row * RECT_SPACING + CHART_OFFSET_Y
+            # 2. Initial Position (Grid Coords)
+            current_col = 0
+            current_row = random.randint(0, GRID_ROWS - 1)
             
-            # --- Generate Keyframes for each particle's unique hop path ---
+            # 3. Final & Initial Pixel Coords (for keyframes)
+            final_x_px = final_col * RECT_SPACING + CHART_OFFSET_X
+            final_y_px = final_row * RECT_SPACING + CHART_OFFSET_Y
+            initial_x_px = current_col * RECT_SPACING + CHART_OFFSET_X
+            initial_y_px = current_row * RECT_SPACING + CHART_OFFSET_Y
+            
+            # --- Keyframe Generation ---
             keyframe_name = f"diffuse-{w_idx}-{day['weekday']}-{random.randint(0,999)}"
             
             keyframes_str = f"@{keyframe_name} {{"
-            keyframes_str += f"0% {{ transform: translate({initial_x}px, {initial_y}px); opacity: 0.8; }}"
+            # 0% Keyframe: Start inside the chart boundaries
+            keyframes_str += f"0% {{ transform: translate({initial_x_px}px, {initial_y_px}px); opacity: 0.8; }}"
 
-            num_hops = random.randint(3, 8) # More hops for more random motion
+            # Calculate total duration and number of steps for slow fill
+            total_cols_to_move = final_col - current_col
             
-            # Calculate total animation duration based on path length and desired speed
-            # The more "right" the target, the longer it should take
-            base_duration = 2.0 # Minimum duration for simple hops
-            max_right_duration_factor = 0.05 * w_idx # Slower diffusion to the right
-            animation_duration = base_duration + max_right_duration_factor + random.uniform(0.5, 1.5) # Add some randomness
+            # Slower movement: Base duration is high, factor in distance
+            base_duration = 10.0 
+            distance_factor = 0.5 * total_cols_to_move # Slower progression based on distance
+            animation_duration = base_duration + distance_factor + random.uniform(2.0, 5.0) 
             
-            # Generate intermediate hop positions
+            # Total number of hops is proportional to distance and time
+            num_hops = max(10, int(total_cols_to_move * 2) + random.randint(10, 20)) 
+            
+            
+            # --- Biased Random Walk Simulation (Generating the intermediate hops) ---
             for i in range(1, num_hops):
-                progress = i / num_hops # Percentage of animation completed
                 
-                # Slower rightward progression: bias x towards the left initially
-                # Use a non-linear progression for X
-                target_x_progress = (progress ** 1.5) # x advances slower at the start
-                current_x_target = initial_x + target_x_progress * (final_x - initial_x)
+                # JUMP CONSTRAINT: Max 3 squares away
+                max_jump = 3
                 
-                # Add significant random jitter around the intended path
-                jitter_x = random.randint(-RECT_SPACING * 2, RECT_SPACING * 2) 
-                jitter_y = random.randint(-RECT_SPACING * 2, RECT_SPACING * 2)
+                col_diff = final_col - current_col
                 
-                # Ensure hops stay somewhat within the grid bounds
-                hop_x = max(CHART_OFFSET_X, min(current_x_target + jitter_x, CHART_OFFSET_X + (GRID_COLS-1) * RECT_SPACING))
-                hop_y = max(CHART_OFFSET_Y, min(initial_y + progress * (final_y - initial_y) + jitter_y, CHART_OFFSET_Y + (GRID_ROWS-1) * RECT_SPACING))
-                
-                keyframe_percent = int(progress * 100 * 0.9) # End before 100% to allow final destination
-                keyframes_str += f"{keyframe_percent}% {{ transform: translate({hop_x}px, {hop_y}px); opacity: 1; }}"
+                # BIAS TO THE RIGHT: Increase probability of positive jump if far left
+                if col_diff > 10:
+                    # Far away: Strong bias right (3 right, 1 stay, 1 left)
+                    col_move_options = [1, 2, 3, 0, -1] 
+                elif col_diff > 0:
+                    # Close but not there: Slight bias right (1 right, 1 stay, 1 left)
+                    col_move_options = [1, 0, -1] 
+                else:
+                    # Already at or past target: Pure random walk
+                    col_move_options = [-1, 0, 1] 
+                    
+                col_jump = random.choice(col_move_options)
+                row_jump = random.randint(-max_jump, max_jump)
 
-            keyframes_str += f"100% {{ transform: translate({final_x}px, {final_y}px); opacity: 1; }}"
+                # Clamp jump magnitude to max_jump
+                col_jump = max(-max_jump, min(col_jump, max_jump)) 
+                
+                # Calculate next grid coordinates
+                next_col = current_col + col_jump
+                next_row = current_row + row_jump
+                
+                # BOUNDARY CHECK 2: Ensure it stays within the chart (0 to GRID_COLS-1)
+                next_col = max(0, min(next_col, GRID_COLS - 1))
+                next_row = max(0, min(next_row, GRID_ROWS - 1))
+                
+                # Update current position for next iteration
+                current_col = next_col
+                current_row = next_row
+                
+                # Convert grid coordinates to pixel coordinates
+                hop_x_px = next_col * RECT_SPACING + CHART_OFFSET_X
+                hop_y_px = next_row * RECT_SPACING + CHART_OFFSET_Y
+                
+                # Calculate keyframe percentage based on hop number
+                # We stop slightly early (99%) to allow the final 100% position to snap correctly
+                keyframe_percent = int((i / num_hops) * 99) 
+                keyframes_str += f"{keyframe_percent}% {{ transform: translate({hop_x_px}px, {hop_y_px}px); opacity: 1; }}"
+
+            # 100% Keyframe: Snap to the final, actual contribution spot
+            keyframes_str += f"100% {{ transform: translate({final_x_px}px, {final_y_px}px); opacity: 1; }}"
             keyframes_str += "}"
             css_keyframes.append(keyframes_str)
 
             # Assign animation to the rect
-            delay = random.uniform(0, 1.5) # Don't all start at once
+            delay = random.uniform(0, 3.0) # Increased initial delay variance
             
             rect = f"""
             <rect width="{RECT_SIZE}" height="{RECT_SIZE}" rx="2" fill="{color}" class="box"
                 style="
-                    transform: translate({initial_x}px, {initial_y}px); /* Initial position set here */
+                    transform: translate({initial_x_px}px, {initial_y_px}px); /* Initial position set here */
                     animation-name: {keyframe_name};
                     animation-duration: {animation_duration}s;
                     animation-delay: {delay}s;
                     animation-fill-mode: forwards;
-                    animation-timing-function: ease-in-out; /* Smoother hops */
+                    animation-timing-function: linear; /* Linear timing gives steady movement between hops */
                 "
             />
             """
             rects.append(rect)
 
-    # Combine all styles and rects
     combined_css = "\n".join(css_keyframes)
-    full_css_style = f"<style>.box {{ animation-timing-function: ease-in-out; animation-fill-mode: forwards; }} {combined_css}</style>"
+    full_css_style = f"<style>.box {{ animation-timing-function: linear; animation-fill-mode: forwards; }} {combined_css}</style>"
 
     svg_content = f"""
     <svg width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" xmlns="http://www.w3.org/2000/svg">
@@ -164,11 +197,8 @@ def generate_svg(weeks):
     return svg_content
 
 def main():
-    if not USERNAME:
-        print("Error: GH_USERNAME is missing.")
-        sys.exit(1)
-    if not TOKEN:
-        print("Error: GH_TOKEN is missing. Please check Repository Secrets.")
+    if not USERNAME or not TOKEN:
+        print(f"Error: {'GH_USERNAME' if not USERNAME else 'GH_TOKEN'} is missing.")
         sys.exit(1)
 
     print(f"Fetching data for user: {USERNAME}")
@@ -176,14 +206,8 @@ def main():
     try:
         weeks = fetch_contributions(USERNAME, TOKEN)
         if not weeks:
-            print("No contribution data found or permission error. Generating empty graph.")
-            # Optionally generate a fallback empty graph
-            svg = f"""
-            <svg width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" xmlns="http://www.w3.org/2000/svg">
-                <rect width="100%" height="100%" fill="#0d1117" rx="6" />
-                <text x="15" y="20" fill="#c9d1d9" font-family="monospace" font-size="14">No Contribution Data (Check Token/Permissions)</text>
-            </svg>
-            """
+            print("No contribution data found or permission error. Generating fallback graph.")
+            svg = f"""<svg width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#0d1117" rx="6" /><text x="15" y="20" fill="#c9d1d9" font-family="monospace" font-size="14">No Contribution Data (Check Token/Permissions)</text></svg>"""
         else:
             svg = generate_svg(weeks)
         
