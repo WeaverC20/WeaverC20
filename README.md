@@ -7,7 +7,7 @@ Graduate Researcher • Fusion Materials • Hydrogen/Tritium Permeation • ML 
 
 About Me
 
-I'm Colin Weaver — a mechanical engineering researcher focused on:
+Mechanical engineering researcher focused on:
 
 Hydrogen permeation in fusion-relevant materials Gas-driven permeation (GDP), trapping, diffusion modeling.
 
