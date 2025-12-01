@@ -2,12 +2,13 @@ import os
 import requests
 import random
 import sys
-# New import to load .env file variables
-from dotenv import load_dotenv
 
-# CONFIGURATION
-# 1. Load environment variables from the .env file (if it exists)
-load_dotenv() 
+# Load .env only if running locally
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
 # 2. Assign variables using os.getenv(), which pulls from the .env file now.
 USERNAME = os.getenv('GH_USERNAME')
