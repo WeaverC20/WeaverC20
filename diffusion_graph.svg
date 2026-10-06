@@ -34,13 +34,13 @@
             <rect x="10" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 164.82460578868955px; 
-                    --start-y: 40.31250829647186px; 
+                    --start-x: 143.20761128877217px; 
+                    --start-y: 1.5644620337973834px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.155840621538296s;
-                    animation-delay: 1.9466467547205932s;
+                    animation-duration: 6.090677847279221s;
+                    animation-delay: 2.0845216292709736s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -51,13 +51,13 @@
             <rect x="10" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 189.19607169905532px; 
-                    --start-y: -1.5778547435152177px; 
+                    --start-x: 140.0628906882475px; 
+                    --start-y: 75.04396623006805px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.840042042888536s;
-                    animation-delay: 1.6810219664958557s;
+                    animation-duration: 5.929826905168026s;
+                    animation-delay: 0.2574694415669133s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -68,13 +68,13 @@
             <rect x="10" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 48.96342689616405px; 
-                    --start-y: -43.49199687494928px; 
+                    --start-x: 52.064814000517046px; 
+                    --start-y: 9.289351108481654px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.349572430905637s;
-                    animation-delay: 0.6983209478610012s;
+                    animation-duration: 8.64547774435116s;
+                    animation-delay: 0.7657647549604247s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -85,13 +85,13 @@
             <rect x="24" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -3.4515593680396677px; 
-                    --start-y: -57.145824932982926px; 
+                    --start-x: 100.51478609744437px; 
+                    --start-y: -37.639464156423585px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.297113261130161s;
-                    animation-delay: 1.1794736591646404s;
+                    animation-duration: 8.921748618588365s;
+                    animation-delay: 0.5466746841316884s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -102,13 +102,13 @@
             <rect x="38" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 114.24868018544018px; 
-                    --start-y: 11.249847714049594px; 
+                    --start-x: 9.574879047843275px; 
+                    --start-y: 9.084122287240632px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.291858002725008s;
-                    animation-delay: 1.4528643018237661s;
+                    animation-duration: 9.516853290124644s;
+                    animation-delay: 2.999187898393376s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -119,13 +119,13 @@
             <rect x="38" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 61.30107885514194px; 
-                    --start-y: -31.040595842401814px; 
+                    --start-x: 103.12846397848602px; 
+                    --start-y: 17.615808726408275px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.430723370281241s;
-                    animation-delay: 2.3116630476465216s;
+                    animation-duration: 8.408509243000797s;
+                    animation-delay: 1.4089009029452777s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -136,13 +136,13 @@
             <rect x="52" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 0.9869635456258408px; 
-                    --start-y: -25.33340831172685px; 
+                    --start-x: 84.47325585357183px; 
+                    --start-y: 18.144558126485748px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.771162781854539s;
-                    animation-delay: 2.595489041872265s;
+                    animation-duration: 7.321320502596002s;
+                    animation-delay: 1.065216373362826s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -153,13 +153,13 @@
             <rect x="52" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 48.69036674078677px; 
-                    --start-y: 1.3340996334670336px; 
+                    --start-x: 4.937911415762301px; 
+                    --start-y: -3.0716471778374057px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.54308541239989s;
-                    animation-delay: 2.603723545789419s;
+                    animation-duration: 7.798260310278439s;
+                    animation-delay: 2.8945274554332405s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -170,13 +170,13 @@
             <rect x="80" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 5.5253528598051105px; 
-                    --start-y: 3.4768608611443312px; 
+                    --start-x: 119.84791487567432px; 
+                    --start-y: 10.140672488797385px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.217628004374381s;
-                    animation-delay: 2.141589174652072s;
+                    animation-duration: 8.981127566203508s;
+                    animation-delay: 1.4540368380688957s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -187,13 +187,13 @@
             <rect x="80" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -4.024649556765908px; 
-                    --start-y: -19.96329065073531px; 
+                    --start-x: 26.351094320763835px; 
+                    --start-y: 49.166708653734446px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 5.790740739837118s;
-                    animation-delay: 0.36525091617599714s;
+                    animation-duration: 9.015300239271586s;
+                    animation-delay: 1.5626018568840077s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -204,13 +204,13 @@
             <rect x="80" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 1.180076602552191px; 
-                    --start-y: -11.147863521177982px; 
+                    --start-x: -22.895300916682544px; 
+                    --start-y: -27.146286108243444px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.622942103977709s;
-                    animation-delay: 0.9161724244213695s;
+                    animation-duration: 9.344789994698889s;
+                    animation-delay: 2.4291246958378445s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -221,13 +221,13 @@
             <rect x="80" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 58.58365239723395px; 
-                    --start-y: 12.41380589002705px; 
+                    --start-x: -75.55305549680982px; 
+                    --start-y: -15.099270674564735px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.044191546796383s;
-                    animation-delay: 0.6360832709647775s;
+                    animation-duration: 10.487733687524862s;
+                    animation-delay: 0.08419948161638935s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -238,13 +238,13 @@
             <rect x="94" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 15.62921695076004px; 
-                    --start-y: 61.75934234975318px; 
+                    --start-x: 48.91283675104327px; 
+                    --start-y: -0.00865972279986238px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.784233216228904s;
-                    animation-delay: 1.3853749001277946s;
+                    animation-duration: 7.185955089970882s;
+                    animation-delay: 1.2544570201053755s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -255,13 +255,13 @@
             <rect x="94" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -4.112393728325102px; 
-                    --start-y: -26.077084279171075px; 
+                    --start-x: -30.8541988501754px; 
+                    --start-y: 63.70001023054607px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.73184361344838s;
-                    animation-delay: 0.9336700974474007s;
+                    animation-duration: 6.734307536472896s;
+                    animation-delay: 1.1620582544170173s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -272,13 +272,13 @@
             <rect x="94" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -77.61607924641027px; 
-                    --start-y: 34.848340762632276px; 
+                    --start-x: -85.62235864837479px; 
+                    --start-y: -32.96126292516488px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.23703338282826s;
-                    animation-delay: 0.42142679167848596s;
+                    animation-duration: 10.183926250499908s;
+                    animation-delay: 1.8700667669805084s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -289,13 +289,13 @@
             <rect x="94" y="86" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 44.93738731108962px; 
-                    --start-y: -6.140778837811752px; 
+                    --start-x: -18.837448777988214px; 
+                    --start-y: -49.784043818784355px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.808549083483674s;
-                    animation-delay: 0.827117346109483s;
+                    animation-duration: 6.550972899804728s;
+                    animation-delay: 1.5603198253107604s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -306,13 +306,13 @@
             <rect x="94" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 26.879778195036195px; 
-                    --start-y: -14.840969841998216px; 
+                    --start-x: 55.67619990935873px; 
+                    --start-y: -51.95994680089939px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.812359387211298s;
-                    animation-delay: 0.463355239261792s;
+                    animation-duration: 8.466753028519024s;
+                    animation-delay: 1.8185633921006579s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -323,13 +323,13 @@
             <rect x="94" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -8.907721389739976px; 
-                    --start-y: 1.8602985658279323px; 
+                    --start-x: -1.3240567048795668px; 
+                    --start-y: -7.200009003063997px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.558463707211304s;
-                    animation-delay: 2.7331209327538337s;
+                    animation-duration: 10.022492766163637s;
+                    animation-delay: 2.826772073506544s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -340,13 +340,13 @@
             <rect x="108" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 34.15911423072566px; 
-                    --start-y: 47.71390600343332px; 
+                    --start-x: -50.946704413285275px; 
+                    --start-y: 55.01155381807939px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.145887250503021s;
-                    animation-delay: 0.537746590418448s;
+                    animation-duration: 6.204910729365557s;
+                    animation-delay: 2.2828676669171353s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -357,13 +357,13 @@
             <rect x="108" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -28.732262753890467px; 
-                    --start-y: 30.56543962006613px; 
+                    --start-x: -50.77053990463193px; 
+                    --start-y: 45.86461976182436px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.4708127338279s;
-                    animation-delay: 1.8337441473778733s;
+                    animation-duration: 10.639517405155264s;
+                    animation-delay: 1.434289994023357s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -374,13 +374,13 @@
             <rect x="108" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 46.13288321839613px; 
-                    --start-y: -19.209211349666333px; 
+                    --start-x: 26.059720728118947px; 
+                    --start-y: -6.376751744909129px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.746178977077314s;
-                    animation-delay: 1.2758549340055618s;
+                    animation-duration: 7.152145822992545s;
+                    animation-delay: 2.100058327265011s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -391,13 +391,13 @@
             <rect x="122" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -121.66799436091232px; 
-                    --start-y: -7.449580338213714px; 
+                    --start-x: -67.5654293655956px; 
+                    --start-y: 70.75126713275779px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.655734035351935s;
-                    animation-delay: 1.1479127236631126s;
+                    animation-duration: 7.670749097778402s;
+                    animation-delay: 1.3074399686088658s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -408,13 +408,13 @@
             <rect x="122" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -12.091867050533892px; 
-                    --start-y: 54.03962122793472px; 
+                    --start-x: -66.67610609823348px; 
+                    --start-y: -8.731654609738271px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.381118483419915s;
-                    animation-delay: 0.5666279851129266s;
+                    animation-duration: 7.725219848982047s;
+                    animation-delay: 2.5444359019802936s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -425,13 +425,13 @@
             <rect x="122" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -39.79481882868052px; 
-                    --start-y: 18.70047010099421px; 
+                    --start-x: -84.29784310633804px; 
+                    --start-y: -51.21655162226655px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.502767913254829s;
-                    animation-delay: 1.5032242913890381s;
+                    animation-duration: 8.937980577569054s;
+                    animation-delay: 1.5733206288243806s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -442,13 +442,13 @@
             <rect x="122" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -52.86593303176737px; 
-                    --start-y: 7.302572302967775px; 
+                    --start-x: 42.313440452369434px; 
+                    --start-y: -48.010888237043886px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.560594529042127s;
-                    animation-delay: 1.173131693136518s;
+                    animation-duration: 6.412731953094252s;
+                    animation-delay: 2.9339838055989347s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -459,13 +459,13 @@
             <rect x="122" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 31.391357215108798px; 
-                    --start-y: -13.139445741966085px; 
+                    --start-x: -82.57653358423718px; 
+                    --start-y: 7.2029276649159755px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 5.864504514898348s;
-                    animation-delay: 1.3522101507245226s;
+                    animation-duration: 10.083804531992888s;
+                    animation-delay: 0.5995964450634628s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -476,13 +476,13 @@
             <rect x="136" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: 62.889731059661756px; 
-                    --start-y: -36.31681465691341px; 
+                    --start-x: 31.666824262738857px; 
+                    --start-y: 6.351209112093301px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.377547036669696s;
-                    animation-delay: 0.20224909387962098s;
+                    animation-duration: 7.924756725034131s;
+                    animation-delay: 1.9188506935204879s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -493,13 +493,13 @@
             <rect x="136" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -88.28802588077775px; 
-                    --start-y: 21.472299539670132px; 
+                    --start-x: -26.579188732626264px; 
+                    --start-y: -62.5285701884185px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.180704566219433s;
-                    animation-delay: 1.9891205221823616s;
+                    animation-duration: 6.848248127521692s;
+                    animation-delay: 0.1998368347863857s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -510,13 +510,13 @@
             <rect x="136" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -25.942825627780593px; 
-                    --start-y: -42.44889809892689px; 
+                    --start-x: -48.841146744958266px; 
+                    --start-y: -68.68353904294449px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.788868385368383s;
-                    animation-delay: 1.9230524102233337s;
+                    animation-duration: 7.2992130127121975s;
+                    animation-delay: 1.6673262671828462s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -527,13 +527,13 @@
             <rect x="150" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -8.710436425109037px; 
-                    --start-y: -25.019540826871875px; 
+                    --start-x: -105.84457195355421px; 
+                    --start-y: -66.27857742082415px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.989881693614352s;
-                    animation-delay: 1.3335718433824115s;
+                    animation-duration: 6.7652355223956695s;
+                    animation-delay: 1.549196755449532s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -544,13 +544,13 @@
             <rect x="164" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -33.38087660575829px; 
-                    --start-y: -17.561584695028316px; 
+                    --start-x: 31.44934054643653px; 
+                    --start-y: -66.41537586101542px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.120744786467782s;
-                    animation-delay: 2.1267413451034294s;
+                    animation-duration: 6.264572708954411s;
+                    animation-delay: 0.31432155996537037s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -561,13 +561,13 @@
             <rect x="192" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -143.8343050378032px; 
-                    --start-y: -27.080625381583232px; 
+                    --start-x: -50.57912809881546px; 
+                    --start-y: -33.768161996101654px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.6213234549604545s;
-                    animation-delay: 0.4865020233859042s;
+                    animation-duration: 10.175456086531511s;
+                    animation-delay: 0.502849080885175s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -578,13 +578,13 @@
             <rect x="192" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -180.0622431429452px; 
-                    --start-y: -47.60551818366551px; 
+                    --start-x: -18.28630325101514px; 
+                    --start-y: 24.28270382945948px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 6.810985308960652s;
-                    animation-delay: 2.4952433657694537s;
+                    animation-duration: 8.174916592906198s;
+                    animation-delay: 1.8775179994642248s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -595,13 +595,13 @@
             <rect x="192" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -191.5754758919283px; 
-                    --start-y: 14.243074304401219px; 
+                    --start-x: -144.92491862906627px; 
+                    --start-y: -1.952306703636765px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.271583730109729s;
-                    animation-delay: 1.8493416689454096s;
+                    animation-duration: 8.804003759578396s;
+                    animation-delay: 2.154807662112663s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -612,13 +612,13 @@
             <rect x="206" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -9.8397332962179px; 
-                    --start-y: 90.11101321123485px; 
+                    --start-x: -49.88814613576804px; 
+                    --start-y: 22.975650935860855px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.570159571879545s;
-                    animation-delay: 1.761784283614159s;
+                    animation-duration: 10.600767092524814s;
+                    animation-delay: 1.1258322603429907s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -629,13 +629,13 @@
             <rect x="206" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -181.382540556017px; 
-                    --start-y: 9.90668959773263px; 
+                    --start-x: -108.3181371103793px; 
+                    --start-y: 22.50686340231215px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.606449123159264s;
-                    animation-delay: 0.8953693101136287s;
+                    animation-duration: 11.130915699756061s;
+                    animation-delay: 2.7464733996914843s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -646,13 +646,13 @@
             <rect x="206" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -57.6718510711388px; 
-                    --start-y: -29.741687511281434px; 
+                    --start-x: -20.655828108657403px; 
+                    --start-y: 14.243339853728088px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.769212290470739s;
-                    animation-delay: 1.3558681806416837s;
+                    animation-duration: 10.676002843664266s;
+                    animation-delay: 2.5416006784879657s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -663,13 +663,13 @@
             <rect x="206" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -81.69101245548741px; 
-                    --start-y: 26.40258719408058px; 
+                    --start-x: -163.2237497910113px; 
+                    --start-y: 21.233757206680224px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.058142340127262s;
-                    animation-delay: 0.29164257281379713s;
+                    animation-duration: 8.378662337989814s;
+                    animation-delay: 1.386860095013805s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -680,13 +680,13 @@
             <rect x="206" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -29.28936650392842px; 
-                    --start-y: 15.613596010193234px; 
+                    --start-x: -123.6187253598423px; 
+                    --start-y: 2.8746898010769684px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.178268680823615s;
-                    animation-delay: 0.8761614229899014s;
+                    animation-duration: 9.559834977308654s;
+                    animation-delay: 0.6235340418954215s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -697,13 +697,13 @@
             <rect x="206" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -139.345719974843px; 
-                    --start-y: -76.09039731326331px; 
+                    --start-x: -136.15987855363744px; 
+                    --start-y: -22.533155514599244px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.548937580720972s;
-                    animation-delay: 0.3477154944224611s;
+                    animation-duration: 7.011782071919762s;
+                    animation-delay: 1.1350749114156182s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -714,13 +714,13 @@
             <rect x="206" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -44.061457781757326px; 
-                    --start-y: -20.800069020741844px; 
+                    --start-x: -120.51832598966504px; 
+                    --start-y: -30.861063891204225px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.254298867303271s;
-                    animation-delay: 1.7388935008954718s;
+                    animation-duration: 6.473840260460355s;
+                    animation-delay: 2.734359048487921s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -731,13 +731,13 @@
             <rect x="220" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -149.37601597156882px; 
-                    --start-y: 23.870012494688908px; 
+                    --start-x: -68.28636918858916px; 
+                    --start-y: 12.69404595767945px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.580148540654376s;
-                    animation-delay: 2.6415515928159343s;
+                    animation-duration: 6.936871618213664s;
+                    animation-delay: 1.6328208695457866s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -748,13 +748,13 @@
             <rect x="220" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -157.27300991797716px; 
-                    --start-y: 31.44417395106808px; 
+                    --start-x: -167.28207579557701px; 
+                    --start-y: 59.131859027111716px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.626908499512657s;
-                    animation-delay: 1.372608732027611s;
+                    animation-duration: 7.565268580903665s;
+                    animation-delay: 1.8697583218183822s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -765,13 +765,13 @@
             <rect x="220" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -166.14868674947564px; 
-                    --start-y: -15.769286507019999px; 
+                    --start-x: -89.13044240406504px; 
+                    --start-y: -35.53184704425231px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.175605912385036s;
-                    animation-delay: 2.9560653141117s;
+                    animation-duration: 11.492816001847302s;
+                    animation-delay: 0.8679654489344504s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -782,13 +782,13 @@
             <rect x="220" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -41.16923452803883px; 
-                    --start-y: -63.7100914318058px; 
+                    --start-x: -56.16495963630433px; 
+                    --start-y: -30.14454190034602px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.441536064536995s;
-                    animation-delay: 0.7443148414815557s;
+                    animation-duration: 6.6859893415747145s;
+                    animation-delay: 0.7354056523414215s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -799,13 +799,13 @@
             <rect x="220" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -191.3273496112498px; 
-                    --start-y: -42.41577977303935px; 
+                    --start-x: -149.59695131866988px; 
+                    --start-y: -55.93374281997215px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.179644116081465s;
-                    animation-delay: 0.12400582348626654s;
+                    animation-duration: 7.661825839307963s;
+                    animation-delay: 0.7997549796107796s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -816,13 +816,13 @@
             <rect x="220" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -201.10996039113013px; 
-                    --start-y: -68.20129705348569px; 
+                    --start-x: -27.857763002366454px; 
+                    --start-y: 3.486290580445683px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.67427100446017s;
-                    animation-delay: 0.3508790977019429s;
+                    animation-duration: 10.353408401165908s;
+                    animation-delay: 0.10574437823256577s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -833,13 +833,13 @@
             <rect x="234" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -160.80682511836656px; 
-                    --start-y: -4.3970768583772255px; 
+                    --start-x: -50.65145916421076px; 
+                    --start-y: 6.131696692519057px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.72661930684511s;
-                    animation-delay: 1.4744321576075383s;
+                    animation-duration: 6.744572633966822s;
+                    animation-delay: 2.6048243836448792s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -850,13 +850,13 @@
             <rect x="234" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -68.01707148688166px; 
-                    --start-y: 22.406234808361774px; 
+                    --start-x: -116.37496766952577px; 
+                    --start-y: 44.71697863142285px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.440500446275756s;
-                    animation-delay: 0.28081076115776926s;
+                    animation-duration: 8.932787291009763s;
+                    animation-delay: 2.3075606889489624s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -867,13 +867,13 @@
             <rect x="234" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -205.3249941992251px; 
-                    --start-y: -43.653765880104444px; 
+                    --start-x: -92.5238995209883px; 
+                    --start-y: -23.61779662738722px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.131527732765964s;
-                    animation-delay: 2.235437053764835s;
+                    animation-duration: 8.844060795580713s;
+                    animation-delay: 1.7829890603513578s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -884,13 +884,13 @@
             <rect x="234" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -210.0956562232353px; 
-                    --start-y: -12.957692662688004px; 
+                    --start-x: -35.86436507856871px; 
+                    --start-y: -29.2414165686833px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.029403745121812s;
-                    animation-delay: 2.350518550004363s;
+                    animation-duration: 11.465135269787813s;
+                    animation-delay: 1.3741275175349257s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -901,13 +901,13 @@
             <rect x="234" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -203.38155871476962px; 
-                    --start-y: 15.423211124678318px; 
+                    --start-x: -158.0615595798839px; 
+                    --start-y: 17.498985062622012px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.645903721161742s;
-                    animation-delay: 2.7288584476904947s;
+                    animation-duration: 9.610287130722446s;
+                    animation-delay: 2.6059363410905867s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -918,13 +918,13 @@
             <rect x="248" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -93.7605930403819px; 
-                    --start-y: 25.554055302280275px; 
+                    --start-x: -193.0954661995268px; 
+                    --start-y: 87.13160033570071px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.416285443459772s;
-                    animation-delay: 1.2764617504061406s;
+                    animation-duration: 10.285492445672592s;
+                    animation-delay: 2.525432190836356s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -935,13 +935,13 @@
             <rect x="248" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -184.42948368063404px; 
-                    --start-y: 66.52050054154385px; 
+                    --start-x: -227.0572470386423px; 
+                    --start-y: -7.630573010938036px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.992068032291005s;
-                    animation-delay: 0.5519681503757329s;
+                    animation-duration: 9.868785459657953s;
+                    animation-delay: 0.12277572313239893s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -952,13 +952,13 @@
             <rect x="248" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -55.13194063906599px; 
-                    --start-y: -29.843130084024352px; 
+                    --start-x: -151.6652917129011px; 
+                    --start-y: 17.43348881777409px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.961029611687355s;
-                    animation-delay: 1.9126549533070107s;
+                    animation-duration: 10.544688841112567s;
+                    animation-delay: 1.006134492097436s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -969,13 +969,13 @@
             <rect x="248" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -94.90381635186333px; 
-                    --start-y: 23.51575688450552px; 
+                    --start-x: -143.03322595434372px; 
+                    --start-y: -62.640618166605385px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.565247102279955s;
-                    animation-delay: 2.9629149045704244s;
+                    animation-duration: 7.85621933895972s;
+                    animation-delay: 0.5059156280028934s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -986,13 +986,13 @@
             <rect x="248" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -88.97249564229509px; 
-                    --start-y: 0.7031280547147958px; 
+                    --start-x: -170.4820834871656px; 
+                    --start-y: -77.3810802655147px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.410656207727346s;
-                    animation-delay: 1.8074629467715213s;
+                    animation-duration: 8.651398746398275s;
+                    animation-delay: 0.89460697469781s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1003,13 +1003,13 @@
             <rect x="262" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -64.8017994041642px; 
-                    --start-y: 2.975677059159395px; 
+                    --start-x: -96.12054946630906px; 
+                    --start-y: -8.660255107359788px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.996489619364919s;
-                    animation-delay: 1.7589613272486961s;
+                    animation-duration: 6.876271021763846s;
+                    animation-delay: 0.4922698050948875s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1020,13 +1020,13 @@
             <rect x="262" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -85.2571816980946px; 
-                    --start-y: 20.563913723790776px; 
+                    --start-x: -230.70107234506645px; 
+                    --start-y: -52.103113162750816px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.608472095204231s;
-                    animation-delay: 1.7457836413368202s;
+                    animation-duration: 8.963995378898405s;
+                    animation-delay: 1.0743079239342996s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1037,13 +1037,13 @@
             <rect x="276" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -252.6756686287099px; 
-                    --start-y: -13.42492832705522px; 
+                    --start-x: -241.25304878585425px; 
+                    --start-y: -19.922841843675492px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.288617764334925s;
-                    animation-delay: 2.075521932153851s;
+                    animation-duration: 11.664905722132309s;
+                    animation-delay: 2.169578434719958s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1054,13 +1054,13 @@
             <rect x="276" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -143.00758969903612px; 
-                    --start-y: 17.181039509309656px; 
+                    --start-x: -108.15210829684523px; 
+                    --start-y: -15.369907688594651px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.011891301935559s;
-                    animation-delay: 2.593837835224881s;
+                    animation-duration: 7.126307673185983s;
+                    animation-delay: 1.634177016091881s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1071,13 +1071,13 @@
             <rect x="276" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -108.27640341465704px; 
-                    --start-y: 19.03584010289194px; 
+                    --start-x: -269.3958512427902px; 
+                    --start-y: 45.80191191468775px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.247872081969097s;
-                    animation-delay: 0.3500695298233506s;
+                    animation-duration: 7.170353185563761s;
+                    animation-delay: 1.1874740875177185s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1088,13 +1088,13 @@
             <rect x="276" y="86" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -166.46189798585226px; 
-                    --start-y: 24.255981490452797px; 
+                    --start-x: -150.81649624725327px; 
+                    --start-y: -25.75240266689822px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.68723969606986s;
-                    animation-delay: 0.8391574144771038s;
+                    animation-duration: 8.1250443653168s;
+                    animation-delay: 0.8100501692508247s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1105,13 +1105,13 @@
             <rect x="276" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -223.42613044599477px; 
-                    --start-y: -24.317565626470213px; 
+                    --start-x: -102.50948452569847px; 
+                    --start-y: -32.664824017891945px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.772407677709117s;
-                    animation-delay: 1.6022724423441448s;
+                    animation-duration: 7.812012659125306s;
+                    animation-delay: 2.51208466911585s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1122,13 +1122,13 @@
             <rect x="276" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -255.51322932240424px; 
-                    --start-y: 7.6414566939106265px; 
+                    --start-x: -146.54441111719075px; 
+                    --start-y: 4.882862130552667px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.584136155020092s;
-                    animation-delay: 2.2816531736662498s;
+                    animation-duration: 6.9116698570968165s;
+                    animation-delay: 0.5273936545187341s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1139,13 +1139,13 @@
             <rect x="290" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -128.98216752060583px; 
-                    --start-y: -0.8294166995367505px; 
+                    --start-x: -240.86113527265897px; 
+                    --start-y: 37.197807272886436px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.200689904295311s;
-                    animation-delay: 0.4969294689615915s;
+                    animation-duration: 8.688081512137796s;
+                    animation-delay: 0.9369169486358492s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1156,13 +1156,13 @@
             <rect x="290" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -249.5030872622612px; 
-                    --start-y: 40.393733518564346px; 
+                    --start-x: -125.44217883993866px; 
+                    --start-y: 73.50660137030088px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.161667950286292s;
-                    animation-delay: 0.4909115415115577s;
+                    animation-duration: 11.25126034322985s;
+                    animation-delay: 1.712611260469246s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1173,13 +1173,13 @@
             <rect x="290" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -273.9430469608596px; 
-                    --start-y: -21.312112610968853px; 
+                    --start-x: -166.84834920924868px; 
+                    --start-y: -7.901304748174212px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.771473438406415s;
-                    animation-delay: 1.0313935015006788s;
+                    animation-duration: 8.581511429846014s;
+                    animation-delay: 0.9812648906113485s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1190,13 +1190,13 @@
             <rect x="290" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -126.65719067664898px; 
-                    --start-y: 0.8262543204601371px; 
+                    --start-x: -173.0718469322352px; 
+                    --start-y: -23.342335283824482px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.936819072691518s;
-                    animation-delay: 0.40024721789541584s;
+                    animation-duration: 7.864828552221399s;
+                    animation-delay: 0.2714042446347005s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1207,13 +1207,13 @@
             <rect x="290" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -281.41368094348877px; 
-                    --start-y: -19.470496970908968px; 
+                    --start-x: -275.9757088480441px; 
+                    --start-y: -9.959875470134278px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.79366649501298s;
-                    animation-delay: 2.8620557348068436s;
+                    animation-duration: 9.889795150251969s;
+                    animation-delay: 2.685845003339181s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1224,13 +1224,13 @@
             <rect x="304" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -195.8966040018297px; 
-                    --start-y: 34.93780637830011px; 
+                    --start-x: -171.50366433623128px; 
+                    --start-y: -22.27604728256088px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.566209254080656s;
-                    animation-delay: 2.0816067547656445s;
+                    animation-duration: 10.504779176001964s;
+                    animation-delay: 0.7053245982147787s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1241,13 +1241,13 @@
             <rect x="304" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -152.02348730606653px; 
-                    --start-y: 7.905679856685353px; 
+                    --start-x: -236.56600239789617px; 
+                    --start-y: -17.56205059669577px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.691810214634339s;
-                    animation-delay: 0.912901369655165s;
+                    animation-duration: 7.243037606751351s;
+                    animation-delay: 2.6899880863777934s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1258,13 +1258,13 @@
             <rect x="304" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -198.0189902019007px; 
-                    --start-y: 20.249632231654488px; 
+                    --start-x: -248.86603284616015px; 
+                    --start-y: -3.3097725028498104px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.745366255626987s;
-                    animation-delay: 2.4983122858247566s;
+                    animation-duration: 7.3974958960602795s;
+                    animation-delay: 2.1984177360522437s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1275,13 +1275,13 @@
             <rect x="318" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -125.19446700992549px; 
-                    --start-y: 61.06157446371195px; 
+                    --start-x: -195.4779967298373px; 
+                    --start-y: -10.221816116372295px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.278123312644286s;
-                    animation-delay: 0.2990191606945307s;
+                    animation-duration: 7.516537974897795s;
+                    animation-delay: 0.06611044938981114s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1292,13 +1292,13 @@
             <rect x="318" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -201.70720767048869px; 
-                    --start-y: 10.112870137733054px; 
+                    --start-x: -235.3442737739045px; 
+                    --start-y: -53.77059486505392px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.455463412589555s;
-                    animation-delay: 2.8963905086256356s;
+                    animation-duration: 12.135040340522863s;
+                    animation-delay: 1.525231373944465s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1309,13 +1309,13 @@
             <rect x="332" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -183.11227851264613px; 
-                    --start-y: 15.923304892461765px; 
+                    --start-x: -305.5758170477299px; 
+                    --start-y: 26.564457626318003px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.341894529891325s;
-                    animation-delay: 1.7608140593057062s;
+                    animation-duration: 11.148563188504816s;
+                    animation-delay: 0.6825875796211883s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1326,13 +1326,13 @@
             <rect x="332" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -243.7883599099904px; 
-                    --start-y: 14.341616470212912px; 
+                    --start-x: -276.8266802864197px; 
+                    --start-y: -49.31045049638425px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.568498859918463s;
-                    animation-delay: 1.2372096189242936s;
+                    animation-duration: 8.986552827402257s;
+                    animation-delay: 1.9850602529842267s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1343,13 +1343,13 @@
             <rect x="346" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -289.68295327802116px; 
-                    --start-y: -34.92635734857541px; 
+                    --start-x: -151.68472440025326px; 
+                    --start-y: -0.8995751225923883px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.478453762950165s;
-                    animation-delay: 1.4349455882371192s;
+                    animation-duration: 7.8609661193161475s;
+                    animation-delay: 0.4697192168406866s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1360,13 +1360,13 @@
             <rect x="346" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -300.6664153950427px; 
-                    --start-y: -27.822840229787893px; 
+                    --start-x: -277.8280674220441px; 
+                    --start-y: -26.734711936202928px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.258055283140033s;
-                    animation-delay: 1.086340762728848s;
+                    animation-duration: 8.36099760683862s;
+                    animation-delay: 2.328165798232004s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1377,13 +1377,13 @@
             <rect x="346" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -329.44182057723526px; 
-                    --start-y: -14.58660711290024px; 
+                    --start-x: -259.51565478610763px; 
+                    --start-y: -29.952057576113276px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.986423669957938s;
-                    animation-delay: 2.625918818442264s;
+                    animation-duration: 11.080499277246775s;
+                    animation-delay: 1.869886492786709s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1394,13 +1394,13 @@
             <rect x="346" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -198.99678716860438px; 
-                    --start-y: -14.848773869643452px; 
+                    --start-x: -319.17935246003333px; 
+                    --start-y: -77.30324737496619px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.071392836202516s;
-                    animation-delay: 1.9209519967462354s;
+                    animation-duration: 7.784091128327968s;
+                    animation-delay: 0.40148956981991213s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1411,13 +1411,13 @@
             <rect x="360" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -269.66492041782647px; 
-                    --start-y: 6.618820626340202px; 
+                    --start-x: -232.2993981854135px; 
+                    --start-y: 72.64442170704584px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.275485295718374s;
-                    animation-delay: 0.6430536706952752s;
+                    animation-duration: 9.488288812088225s;
+                    animation-delay: 2.686399505986207s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1428,13 +1428,13 @@
             <rect x="360" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -301.97722130949217px; 
-                    --start-y: -45.75761159112305px; 
+                    --start-x: -213.63970773308915px; 
+                    --start-y: 44.8634497119579px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.699715865107267s;
-                    animation-delay: 1.1353676023678134s;
+                    animation-duration: 9.219616071824035s;
+                    animation-delay: 1.2946030412703395s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1445,13 +1445,13 @@
             <rect x="360" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -178.32365186390115px; 
-                    --start-y: 8.207005501155322px; 
+                    --start-x: -292.1425282941718px; 
+                    --start-y: -16.972312639878794px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.870875707752447s;
-                    animation-delay: 0.20967060142928207s;
+                    animation-duration: 10.428383761314965s;
+                    animation-delay: 2.093473454630681s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1462,13 +1462,13 @@
             <rect x="360" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -256.8752983923289px; 
-                    --start-y: 20.160153793636823px; 
+                    --start-x: -313.83194488750746px; 
+                    --start-y: 11.001040769714365px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.103261631052305s;
-                    animation-delay: 2.583010064975788s;
+                    animation-duration: 7.836026163415785s;
+                    animation-delay: 1.282120517626549s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1479,13 +1479,13 @@
             <rect x="374" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -369.62356164522913px; 
-                    --start-y: 27.53052908889805px; 
+                    --start-x: -220.83052829100026px; 
+                    --start-y: 39.894985124348494px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.884159990702738s;
-                    animation-delay: 0.3509281010462646s;
+                    animation-duration: 11.900851676261961s;
+                    animation-delay: 0.8407499139631693s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1496,13 +1496,13 @@
             <rect x="374" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -352.39672936531554px; 
-                    --start-y: 16.41361329281453px; 
+                    --start-x: -258.00739549259004px; 
+                    --start-y: 9.536884277931705px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.57584691003952s;
-                    animation-delay: 0.5608434253097166s;
+                    animation-duration: 7.637086096920589s;
+                    animation-delay: 0.903039026387681s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1513,13 +1513,13 @@
             <rect x="374" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -340.8134651213387px; 
-                    --start-y: -67.95033130726314px; 
+                    --start-x: -324.65498215112893px; 
+                    --start-y: -75.20894841725479px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.360208598063526s;
-                    animation-delay: 1.5240295769929881s;
+                    animation-duration: 11.470878049418014s;
+                    animation-delay: 0.1301303888020907s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1530,13 +1530,13 @@
             <rect x="388" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -201.293545656095px; 
-                    --start-y: -4.083242143148837px; 
+                    --start-x: -322.34237758548943px; 
+                    --start-y: -15.47935645088171px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.285014846851599s;
-                    animation-delay: 1.4626525835450002s;
+                    animation-duration: 9.403692015027897s;
+                    animation-delay: 1.8277770614783098s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1547,13 +1547,13 @@
             <rect x="388" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -351.0747039001197px; 
-                    --start-y: 21.632884462251326px; 
+                    --start-x: -357.1114020005203px; 
+                    --start-y: -28.1084198550314px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 7.9774739921557725s;
-                    animation-delay: 1.975016513382318s;
+                    animation-duration: 11.594197011923029s;
+                    animation-delay: 1.7105486684953626s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1564,13 +1564,13 @@
             <rect x="388" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -286.6143915327607px; 
-                    --start-y: -13.117658841359983px; 
+                    --start-x: -205.91090956830615px; 
+                    --start-y: -0.48880050646845064px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.919512336318064s;
-                    animation-delay: 0.7602936827017304s;
+                    animation-duration: 10.798295305102801s;
+                    animation-delay: 2.5612807118111083s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1581,13 +1581,13 @@
             <rect x="402" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -358.4635890800103px; 
-                    --start-y: -2.4112083283276107px; 
+                    --start-x: -367.5722732282804px; 
+                    --start-y: -11.785476697812612px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.634919129754765s;
-                    animation-delay: 2.5008003162516115s;
+                    animation-duration: 12.778077150225176s;
+                    animation-delay: 0.8374504499936877s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1598,13 +1598,13 @@
             <rect x="402" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -293.957614183037px; 
-                    --start-y: -29.574266374729376px; 
+                    --start-x: -316.83816216104003px; 
+                    --start-y: -27.91245697948426px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.549137175438897s;
-                    animation-delay: 2.13321115504343s;
+                    animation-duration: 8.191708850941174s;
+                    animation-delay: 0.780030439577849s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1615,13 +1615,13 @@
             <rect x="402" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -331.86371843213203px; 
-                    --start-y: 10.491558023126032px; 
+                    --start-x: -341.3898487544814px; 
+                    --start-y: -20.02874525748132px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.539378957518048s;
-                    animation-delay: 2.87154995974621s;
+                    animation-duration: 10.778802108355972s;
+                    animation-delay: 0.20423394647188098s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1632,13 +1632,13 @@
             <rect x="402" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -302.4872538296179px; 
-                    --start-y: -75.0499826846725px; 
+                    --start-x: -246.0231167125135px; 
+                    --start-y: 5.694139285365168px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.367891173550062s;
-                    animation-delay: 0.789648060783433s;
+                    animation-duration: 12.65978572064753s;
+                    animation-delay: 2.977900209787846s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1649,13 +1649,13 @@
             <rect x="402" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -315.4145699630282px; 
-                    --start-y: -54.65232674323921px; 
+                    --start-x: -276.7320032784366px; 
+                    --start-y: -70.41383187633488px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.43879102278224s;
-                    animation-delay: 2.601330526713572s;
+                    animation-duration: 11.306046335724908s;
+                    animation-delay: 1.9499299982682559s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1666,13 +1666,13 @@
             <rect x="416" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -353.7786530787722px; 
-                    --start-y: 56.05988130378476px; 
+                    --start-x: -408.29605150439295px; 
+                    --start-y: 72.04191980411093px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.554651210002957s;
-                    animation-delay: 0.5624132692970575s;
+                    animation-duration: 9.093141908649876s;
+                    animation-delay: 1.2194183881099936s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1683,13 +1683,13 @@
             <rect x="416" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -377.6075164055962px; 
-                    --start-y: 34.45325991452947px; 
+                    --start-x: -395.17008237108405px; 
+                    --start-y: 19.76943573641337px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.475588284106747s;
-                    animation-delay: 1.5095365321845937s;
+                    animation-duration: 9.069816793561639s;
+                    animation-delay: 2.190128952285893s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1700,13 +1700,13 @@
             <rect x="416" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -331.2082702628816px; 
-                    --start-y: 16.24363085005723px; 
+                    --start-x: -222.02552048596618px; 
+                    --start-y: 38.23858468545632px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.498301974436284s;
-                    animation-delay: 2.3122132682183283s;
+                    animation-duration: 11.223690896401502s;
+                    animation-delay: 0.83316611428438s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1717,13 +1717,13 @@
             <rect x="430" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -340.0477702151835px; 
-                    --start-y: 6.173324445543571px; 
+                    --start-x: -411.2012669993975px; 
+                    --start-y: 73.59172799646022px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.525118302047483s;
-                    animation-delay: 2.2121892707957054s;
+                    animation-duration: 11.162060364382173s;
+                    animation-delay: 0.03858252807566742s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1734,13 +1734,13 @@
             <rect x="430" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -293.6246500246999px; 
-                    --start-y: 43.454848637212294px; 
+                    --start-x: -241.74645483504813px; 
+                    --start-y: 34.44013267606941px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.02393359769562s;
-                    animation-delay: 1.4943850955009266s;
+                    animation-duration: 10.625575402723754s;
+                    animation-delay: 2.5022949068409392s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1751,13 +1751,13 @@
             <rect x="430" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -355.8054274960657px; 
-                    --start-y: -23.001128819054657px; 
+                    --start-x: -347.8768466093941px; 
+                    --start-y: -12.526147069747282px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.866942586534899s;
-                    animation-delay: 2.458803629756515s;
+                    animation-duration: 8.897991041409412s;
+                    animation-delay: 2.572288830711952s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1768,13 +1768,13 @@
             <rect x="430" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -261.0505442419547px; 
-                    --start-y: 12.239836237721093px; 
+                    --start-x: -268.6639242750905px; 
+                    --start-y: -13.435361427129635px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.67140011410811s;
-                    animation-delay: 0.6285051063632713s;
+                    animation-duration: 8.079198686328843s;
+                    animation-delay: 1.7329791515095816s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1785,13 +1785,13 @@
             <rect x="458" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -301.4630698656022px; 
-                    --start-y: 44.890655602829725px; 
+                    --start-x: -416.8971755264529px; 
+                    --start-y: 11.919274917082952px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.720734261809032s;
-                    animation-delay: 1.8555666527612762s;
+                    animation-duration: 8.304009124795577s;
+                    animation-delay: 2.8651420954666666s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1802,13 +1802,13 @@
             <rect x="458" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -449.9628079464541px; 
-                    --start-y: -19.956056829176433px; 
+                    --start-x: -440.64413438966415px; 
+                    --start-y: 30.585197232812902px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.525500977980986s;
-                    animation-delay: 2.493113738630979s;
+                    animation-duration: 10.061052028781827s;
+                    animation-delay: 0.35372019976269553s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1819,13 +1819,13 @@
             <rect x="458" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -296.64093490981776px; 
-                    --start-y: 29.476522089204963px; 
+                    --start-x: -342.66266216823px; 
+                    --start-y: 3.6901875005991087px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.781467432392944s;
-                    animation-delay: 1.8602014196708512s;
+                    animation-duration: 10.904981287732578s;
+                    animation-delay: 2.2801832943106213s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1836,13 +1836,13 @@
             <rect x="458" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -317.94743296080605px; 
-                    --start-y: -58.67554303559488px; 
+                    --start-x: -422.9934159721696px; 
+                    --start-y: -61.6288546992518px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.600871733918682s;
-                    animation-delay: 0.2223178799409573s;
+                    animation-duration: 9.971512088941406s;
+                    animation-delay: 0.19612687294851383s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1853,13 +1853,13 @@
             <rect x="472" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -300.91303565048565px; 
-                    --start-y: 39.05576281938545px; 
+                    --start-x: -404.3818197867277px; 
+                    --start-y: 34.621725941720854px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.004166390082904s;
-                    animation-delay: 1.8253374953927035s;
+                    animation-duration: 13.297893747283062s;
+                    animation-delay: 2.536354331427012s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1870,13 +1870,13 @@
             <rect x="472" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -434.33299933660965px; 
-                    --start-y: -11.378070422652087px; 
+                    --start-x: -308.0061391193476px; 
+                    --start-y: -75.92898574680996px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.816729203345178s;
-                    animation-delay: 0.32897815637445205s;
+                    animation-duration: 11.045601743648714s;
+                    animation-delay: 0.4923498926508325s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1887,13 +1887,13 @@
             <rect x="486" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -384.90693309853066px; 
-                    --start-y: 71.18413626037628px; 
+                    --start-x: -369.40387759434657px; 
+                    --start-y: 25.47591452557313px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.545433234999871s;
-                    animation-delay: 1.6569350428291627s;
+                    animation-duration: 12.867804050982532s;
+                    animation-delay: 2.044058975048407s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1904,13 +1904,13 @@
             <rect x="486" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -318.9961901359582px; 
-                    --start-y: -34.15343157797775px; 
+                    --start-x: -446.7638721756822px; 
+                    --start-y: 47.88982182508967px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.115174300744055s;
-                    animation-delay: 0.7204736457835178s;
+                    animation-duration: 11.51354953402073s;
+                    animation-delay: 0.33897922289654026s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1921,13 +1921,13 @@
             <rect x="486" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -435.0015570735176px; 
-                    --start-y: 47.1044746762703px; 
+                    --start-x: -437.83702487911444px; 
+                    --start-y: -33.43017905925242px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.490201349781866s;
-                    animation-delay: 2.8815318404808092s;
+                    animation-duration: 9.637541796088039s;
+                    animation-delay: 0.06615344858727212s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1938,13 +1938,13 @@
             <rect x="486" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -418.4489439648747px; 
-                    --start-y: -21.872963347973027px; 
+                    --start-x: -322.1980653419865px; 
+                    --start-y: 30.520055613869985px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.60028946757598s;
-                    animation-delay: 2.6708464120871533s;
+                    animation-duration: 10.236843227438445s;
+                    animation-delay: 2.666736713415678s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1955,13 +1955,13 @@
             <rect x="486" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -472.0344731702857px; 
-                    --start-y: -20.831820236859045px; 
+                    --start-x: -412.8682902651208px; 
+                    --start-y: -12.429388693808377px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.393490231836244s;
-                    animation-delay: 0.5017609442737193s;
+                    animation-duration: 10.766493945705502s;
+                    animation-delay: 0.6798526803829203s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1972,13 +1972,13 @@
             <rect x="500" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -383.88246910594px; 
-                    --start-y: -19.92994204695816px; 
+                    --start-x: -440.66438802786587px; 
+                    --start-y: -5.24937837860783px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.10901813961633s;
-                    animation-delay: 2.771805979277913s;
+                    animation-duration: 8.647157747222995s;
+                    animation-delay: 2.3828220819353767s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -1989,13 +1989,13 @@
             <rect x="500" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -483.4288172948614px; 
-                    --start-y: 3.1818034894023555px; 
+                    --start-x: -401.8723659248466px; 
+                    --start-y: 5.7758000001660434px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.249772535716573s;
-                    animation-delay: 0.24138714964676522s;
+                    animation-duration: 10.865550717891574s;
+                    animation-delay: 0.9542279407384907s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2006,13 +2006,13 @@
             <rect x="500" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -429.7088217449938px; 
-                    --start-y: 32.26556806725861px; 
+                    --start-x: -483.9044990974502px; 
+                    --start-y: 44.932279394252134px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.663684744061824s;
-                    animation-delay: 2.8180217887884633s;
+                    animation-duration: 8.693308585218613s;
+                    animation-delay: 0.7364577653597371s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2023,13 +2023,13 @@
             <rect x="500" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -334.116879347131px; 
-                    --start-y: -3.4660409991529946px; 
+                    --start-x: -383.6827130017266px; 
+                    --start-y: -10.796294824887639px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.11078619039434s;
-                    animation-delay: 0.25660615416638455s;
+                    animation-duration: 11.264259688485735s;
+                    animation-delay: 0.953508051263687s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2040,13 +2040,13 @@
             <rect x="500" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -340.66732465774527px; 
-                    --start-y: -2.7514474364049306px; 
+                    --start-x: -346.41296397186716px; 
+                    --start-y: -54.597410689690435px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.304039397863116s;
-                    animation-delay: 2.4444917660635004s;
+                    animation-duration: 11.3424482600052s;
+                    animation-delay: 2.635603708330885s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2057,13 +2057,13 @@
             <rect x="514" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -395.9534922538876px; 
-                    --start-y: 4.486807246850141px; 
+                    --start-x: -371.64922972388075px; 
+                    --start-y: 12.54909140849145px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.886324692116052s;
-                    animation-delay: 2.56816757397248s;
+                    animation-duration: 12.517488650224545s;
+                    animation-delay: 2.4186959474518526s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2074,13 +2074,13 @@
             <rect x="514" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -466.7406896883253px; 
-                    --start-y: 6.694947823006146px; 
+                    --start-x: -480.7499896039784px; 
+                    --start-y: 39.84631743543426px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.381882269959162s;
-                    animation-delay: 1.094526350918516s;
+                    animation-duration: 10.96726300200565s;
+                    animation-delay: 1.3747082697156796s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2091,13 +2091,13 @@
             <rect x="514" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -490.95348349049266px; 
-                    --start-y: -29.613885292454185px; 
+                    --start-x: -483.5831339490511px; 
+                    --start-y: 38.50640578217413px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 8.886384109065844s;
-                    animation-delay: 1.0837568851057664s;
+                    animation-duration: 9.827326553300455s;
+                    animation-delay: 2.7604070141024253s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2108,13 +2108,13 @@
             <rect x="514" y="86" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -377.72342743952225px; 
-                    --start-y: 32.90263420341124px; 
+                    --start-x: -490.76676749258px; 
+                    --start-y: 14.577122620865183px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.106010964054528s;
-                    animation-delay: 0.7633535335681969s;
+                    animation-duration: 12.101928014100018s;
+                    animation-delay: 1.058925651734144s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2125,13 +2125,13 @@
             <rect x="514" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -482.42409853831316px; 
-                    --start-y: -44.88062666714987px; 
+                    --start-x: -392.7892969887747px; 
+                    --start-y: 2.312381341846276px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.460371964187894s;
-                    animation-delay: 1.7611056291637288s;
+                    animation-duration: 10.273248025612991s;
+                    animation-delay: 0.7017695548120256s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2142,13 +2142,13 @@
             <rect x="528" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -336.50304927295383px; 
-                    --start-y: 55.366573682191984px; 
+                    --start-x: -386.27547667926854px; 
+                    --start-y: -4.567527218079633px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.587268098825447s;
-                    animation-delay: 2.086146576601399s;
+                    animation-duration: 13.232002700820043s;
+                    animation-delay: 0.3927537333445579s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2159,13 +2159,13 @@
             <rect x="528" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -487.1834186739935px; 
-                    --start-y: 8.541020889503244px; 
+                    --start-x: -334.6925128663151px; 
+                    --start-y: -8.405882565814906px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.616736540729981s;
-                    animation-delay: 0.8590491355860529s;
+                    animation-duration: 9.884538844028391s;
+                    animation-delay: 2.9754573958064645s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2176,13 +2176,13 @@
             <rect x="528" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -477.3888380732109px; 
-                    --start-y: 12.609023520228746px; 
+                    --start-x: -328.88786618991315px; 
+                    --start-y: -7.925907020917407px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.902489078458427s;
-                    animation-delay: 0.43545150114562015s;
+                    animation-duration: 12.155818161747938s;
+                    animation-delay: 1.869870121552204s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2193,13 +2193,13 @@
             <rect x="528" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -366.2335385201061px; 
-                    --start-y: -48.29508927523486px; 
+                    --start-x: -422.3767342220473px; 
+                    --start-y: 17.986220688003527px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.566437421034127s;
-                    animation-delay: 0.22580252766042608s;
+                    animation-duration: 10.7891921966992s;
+                    animation-delay: 0.3376128853488404s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2210,13 +2210,13 @@
             <rect x="542" y="44" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -532.7856358275861px; 
-                    --start-y: 12.459755589759332px; 
+                    --start-x: -368.51351535419644px; 
+                    --start-y: -16.78437824094169px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.283276768244376s;
-                    animation-delay: 0.948611306084522s;
+                    animation-duration: 11.519304772093578s;
+                    animation-delay: 0.9929466029105452s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2227,13 +2227,13 @@
             <rect x="542" y="58" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -400.89852875867587px; 
-                    --start-y: 44.42690928133764px; 
+                    --start-x: -474.19081050048067px; 
+                    --start-y: 5.156570760809352px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.295706701939034s;
-                    animation-delay: 0.663246247603149s;
+                    animation-duration: 13.453597811745421s;
+                    animation-delay: 0.25364360582528533s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2244,13 +2244,13 @@
             <rect x="542" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -409.68512974319964px; 
-                    --start-y: -3.6911378833342496px; 
+                    --start-x: -445.23404644625185px; 
+                    --start-y: -20.394100846031726px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.933033127284533s;
-                    animation-delay: 1.8905454053415822s;
+                    animation-duration: 12.9845224162837s;
+                    animation-delay: 1.3152737315354175s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2261,13 +2261,13 @@
             <rect x="556" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -514.0447394657322px; 
-                    --start-y: 11.588810783536019px; 
+                    --start-x: -378.8444110927327px; 
+                    --start-y: -5.607196373796739px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.720597606566027s;
-                    animation-delay: 2.4329150788750433s;
+                    animation-duration: 9.004397484895474s;
+                    animation-delay: 0.9896677686185298s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2278,13 +2278,13 @@
             <rect x="570" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -432.4854676443442px; 
-                    --start-y: 31.184134550240223px; 
+                    --start-x: -432.7624200295636px; 
+                    --start-y: 13.356479582307209px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.04710103520316s;
-                    animation-delay: 1.7651024726025855s;
+                    animation-duration: 11.750860412445007s;
+                    animation-delay: 0.9270959811740631s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2295,13 +2295,13 @@
             <rect x="570" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -552.4059571540247px; 
-                    --start-y: -1.8159707936742748px; 
+                    --start-x: -384.2917472558273px; 
+                    --start-y: 34.45350450987365px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.589409148065613s;
-                    animation-delay: 1.122182577865745s;
+                    animation-duration: 11.782518064440183s;
+                    animation-delay: 2.020401011903292s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2312,13 +2312,13 @@
             <rect x="584" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -545.3097780366048px; 
-                    --start-y: 67.69298124334402px; 
+                    --start-x: -524.5530418763823px; 
+                    --start-y: 12.571993323277972px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.525518795519499s;
-                    animation-delay: 1.888615957151261s;
+                    animation-duration: 9.426270076101908s;
+                    animation-delay: 2.0672162889129506s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2329,13 +2329,13 @@
             <rect x="584" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -527.7877683170113px; 
-                    --start-y: -1.4434382359215334px; 
+                    --start-x: -557.9782684727204px; 
+                    --start-y: 11.198552600180648px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.351662214078523s;
-                    animation-delay: 2.090921371850359s;
+                    animation-duration: 9.36299332213656s;
+                    animation-delay: 2.206988562340899s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2346,13 +2346,13 @@
             <rect x="584" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -500.72925368391316px; 
-                    --start-y: 14.082555345910151px; 
+                    --start-x: -426.4972999595732px; 
+                    --start-y: -16.908467864019308px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.814202238425025s;
-                    animation-delay: 2.105456479605311s;
+                    animation-duration: 10.81144122673086s;
+                    animation-delay: 0.489768236545131s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2363,13 +2363,13 @@
             <rect x="584" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -469.6177638413601px; 
-                    --start-y: -46.001458644717594px; 
+                    --start-x: -423.4398635762867px; 
+                    --start-y: -57.60772894235214px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.195336972471097s;
-                    animation-delay: 1.9750393391567806s;
+                    animation-duration: 10.26713205040711s;
+                    animation-delay: 0.9176954561019873s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2380,13 +2380,13 @@
             <rect x="584" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -452.88374840972494px; 
-                    --start-y: -44.435064653127675px; 
+                    --start-x: -468.0685373883208px; 
+                    --start-y: -23.891643192864336px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.016396523205565s;
-                    animation-delay: 1.8592862031210347s;
+                    animation-duration: 9.83193544264169s;
+                    animation-delay: 0.18245165865815338s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2397,13 +2397,13 @@
             <rect x="584" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -390.5284256129124px; 
-                    --start-y: -36.073967973421915px; 
+                    --start-x: -519.9617524892772px; 
+                    --start-y: -65.99982820837101px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.41623582740517s;
-                    animation-delay: 0.3979529751769406s;
+                    animation-duration: 9.61414390185356s;
+                    animation-delay: 1.414582858243402s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2414,13 +2414,13 @@
             <rect x="598" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -439.21260137655133px; 
-                    --start-y: 4.02623223692477px; 
+                    --start-x: -470.8476398251629px; 
+                    --start-y: 58.25547987086297px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.538158962864202s;
-                    animation-delay: 0.6157715874711764s;
+                    animation-duration: 13.62820200847844s;
+                    animation-delay: 2.026340984738021s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2431,13 +2431,13 @@
             <rect x="598" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -506.00958554617426px; 
-                    --start-y: -13.314307677132511px; 
+                    --start-x: -535.7765984945206px; 
+                    --start-y: 63.665675098978994px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.032241917614552s;
-                    animation-delay: 0.1415451660470305s;
+                    animation-duration: 10.163765560438131s;
+                    animation-delay: 0.6748272379079108s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2448,13 +2448,13 @@
             <rect x="598" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -535.2002555774502px; 
-                    --start-y: 27.705887775989993px; 
+                    --start-x: -481.8844535748772px; 
+                    --start-y: -16.031834890921857px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.25080422960464s;
-                    animation-delay: 2.6111856157658915s;
+                    animation-duration: 12.437056422874058s;
+                    animation-delay: 0.9773484005645329s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2465,13 +2465,13 @@
             <rect x="598" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -524.9960374379591px; 
-                    --start-y: 16.51322210778305px; 
+                    --start-x: -573.1732125533248px; 
+                    --start-y: -22.59161034111972px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.904487000525815s;
-                    animation-delay: 0.6472266255234337s;
+                    animation-duration: 9.62717129507158s;
+                    animation-delay: 0.6710565415238583s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2482,13 +2482,13 @@
             <rect x="612" y="44" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -568.3066789392484px; 
-                    --start-y: 50.60988308131438px; 
+                    --start-x: -493.3320010742778px; 
+                    --start-y: 55.40503431046044px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.071284621433511s;
-                    animation-delay: 0.7164274196602644s;
+                    animation-duration: 11.584486166696788s;
+                    animation-delay: 2.49176695761777s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2499,13 +2499,13 @@
             <rect x="612" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -531.4564801458039px; 
-                    --start-y: 36.58565686655086px; 
+                    --start-x: -513.1883199300859px; 
+                    --start-y: 20.09594799815271px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.35255454533984s;
-                    animation-delay: 0.6618365499878653s;
+                    animation-duration: 14.231563572654409s;
+                    animation-delay: 1.065124943395166s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2516,13 +2516,13 @@
             <rect x="612" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -482.9498355237628px; 
-                    --start-y: 22.579655435569833px; 
+                    --start-x: -533.5835463436474px; 
+                    --start-y: 19.230265838985233px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.789420068713481s;
-                    animation-delay: 1.8289493857023125s;
+                    animation-duration: 12.36054539946721s;
+                    animation-delay: 1.7311845010279763s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2533,13 +2533,13 @@
             <rect x="612" y="86" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -580.9786696290477px; 
-                    --start-y: -3.3051570884847337px; 
+                    --start-x: -578.7894986294301px; 
+                    --start-y: 13.163858577617589px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.531712639761412s;
-                    animation-delay: 1.853034181781623s;
+                    animation-duration: 9.852210202736355s;
+                    animation-delay: 2.633480592057423s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2550,13 +2550,13 @@
             <rect x="612" y="100" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -562.1435584280784px; 
-                    --start-y: -59.30934890241552px; 
+                    --start-x: -538.2658091754781px; 
+                    --start-y: -70.44058501261551px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.28455540634766s;
-                    animation-delay: 0.6184907208610786s;
+                    animation-duration: 9.427378361282035s;
+                    animation-delay: 1.1582640371463087s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2567,13 +2567,13 @@
             <rect x="612" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -467.41870195219997px; 
-                    --start-y: -70.55082079386582px; 
+                    --start-x: -478.7228206440053px; 
+                    --start-y: -38.77585489730552px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.373851076651476s;
-                    animation-delay: 1.209941212261568s;
+                    animation-duration: 12.961112302590603s;
+                    animation-delay: 0.7946304032686597s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2584,13 +2584,13 @@
             <rect x="626" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -624.7706408750275px; 
-                    --start-y: -8.077836270341209px; 
+                    --start-x: -442.37731865814675px; 
+                    --start-y: -2.222277620615003px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.951807085604722s;
-                    animation-delay: 1.336852852152725s;
+                    animation-duration: 12.271101957614013s;
+                    animation-delay: 0.8049255904946546s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2601,13 +2601,13 @@
             <rect x="626" y="58" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -427.5623400960184px; 
-                    --start-y: -22.435346182033292px; 
+                    --start-x: -614.5377019006869px; 
+                    --start-y: 11.186159402526883px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.511623811411614s;
-                    animation-delay: 2.824941637272907s;
+                    animation-duration: 10.450651571756563s;
+                    animation-delay: 1.76590778497992s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2618,13 +2618,13 @@
             <rect x="626" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -586.3947412407896px; 
-                    --start-y: -25.316653595353223px; 
+                    --start-x: -570.1997028736342px; 
+                    --start-y: -20.54698964571857px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.192174885952369s;
-                    animation-delay: 1.623628061627775s;
+                    animation-duration: 10.011276012730777s;
+                    animation-delay: 0.4109215581922254s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2635,13 +2635,13 @@
             <rect x="626" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -552.6038156350502px; 
-                    --start-y: 28.960598334719975px; 
+                    --start-x: -552.7478363424831px; 
+                    --start-y: -54.06618817695562px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.572164037564294s;
-                    animation-delay: 0.19593474685637557s;
+                    animation-duration: 13.727698715680704s;
+                    animation-delay: 2.097607072624909s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2652,13 +2652,13 @@
             <rect x="626" y="100" width="10" height="10" rx="2" fill="#39d353" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -511.3917709522316px; 
-                    --start-y: -38.08967948395906px; 
+                    --start-x: -613.9173939921944px; 
+                    --start-y: -56.41314865891545px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.573962378015896s;
-                    animation-delay: 1.4691364945635308s;
+                    animation-duration: 11.023765089264018s;
+                    animation-delay: 0.4962935524506945s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2669,13 +2669,13 @@
             <rect x="626" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -576.3965942193605px; 
-                    --start-y: -23.45734692063617px; 
+                    --start-x: -546.3110296877579px; 
+                    --start-y: 2.5922146758179423px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.861241457756s;
-                    animation-delay: 1.1696055247154795s;
+                    animation-duration: 11.00083161117078s;
+                    animation-delay: 0.7815352135458541s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2686,13 +2686,13 @@
             <rect x="640" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -564.7080811851231px; 
-                    --start-y: 76.48257357462106px; 
+                    --start-x: -637.9679146936796px; 
+                    --start-y: 7.568679783858244px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 14.32685649644056s;
-                    animation-delay: 1.118542383122988s;
+                    animation-duration: 12.27947871720209s;
+                    animation-delay: 2.5074476932009957s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2703,13 +2703,13 @@
             <rect x="640" y="44" width="10" height="10" rx="2" fill="#39d353" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -540.1408085620724px; 
-                    --start-y: -14.657987382693307px; 
+                    --start-x: -552.6353214313552px; 
+                    --start-y: 72.67496518016436px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.157087394155198s;
-                    animation-delay: 1.828890862243876s;
+                    animation-duration: 11.892004938589839s;
+                    animation-delay: 0.2025726041710919s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2720,13 +2720,13 @@
             <rect x="640" y="58" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -602.1722801657379px; 
-                    --start-y: -6.876202874475325px; 
+                    --start-x: -621.9163397227657px; 
+                    --start-y: 27.518661643447643px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.174405124143025s;
-                    animation-delay: 1.5554947845159932s;
+                    animation-duration: 12.164304779973357s;
+                    animation-delay: 2.724655156445869s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2737,13 +2737,13 @@
             <rect x="640" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -543.5324093360484px; 
-                    --start-y: 13.652296221230245px; 
+                    --start-x: -458.85072937198424px; 
+                    --start-y: 8.955320131852744px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.069749990192864s;
-                    animation-delay: 1.6402576799417834s;
+                    animation-duration: 12.293929915026949s;
+                    animation-delay: 1.656356062931477s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2754,13 +2754,13 @@
             <rect x="640" y="86" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -630.9622244018717px; 
-                    --start-y: -62.96274770194885px; 
+                    --start-x: -446.0608842425843px; 
+                    --start-y: 2.312040253042241px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.80329608690132s;
-                    animation-delay: 1.5695769473688044s;
+                    animation-duration: 10.52148835649768s;
+                    animation-delay: 1.7786865141784558s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2771,13 +2771,13 @@
             <rect x="640" y="100" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -570.4669201791996px; 
-                    --start-y: -4.213823761165472px; 
+                    --start-x: -619.8497091350496px; 
+                    --start-y: -36.66315562322647px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.935908334368927s;
-                    animation-delay: 0.9173118936870468s;
+                    animation-duration: 12.652274918333536s;
+                    animation-delay: 2.683367975405638s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2788,13 +2788,13 @@
             <rect x="640" y="114" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -442.46457080015233px; 
-                    --start-y: -59.67680033758723px; 
+                    --start-x: -440.0276957421808px; 
+                    --start-y: -72.82429229278416px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.519427049127692s;
-                    animation-delay: 1.7421663490593842s;
+                    animation-duration: 10.689727651372452s;
+                    animation-delay: 2.293535296949551s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2805,13 +2805,13 @@
             <rect x="654" y="30" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -528.2245219886347px; 
-                    --start-y: 45.654853479728914px; 
+                    --start-x: -506.64291536730263px; 
+                    --start-y: 24.74696140560802px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 14.436041699143892s;
-                    animation-delay: 2.7139412970591645s;
+                    animation-duration: 14.327266922706343s;
+                    animation-delay: 0.15674584138944647s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2822,13 +2822,13 @@
             <rect x="654" y="44" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -477.351593940057px; 
-                    --start-y: 52.79932518888158px; 
+                    --start-x: -609.1560085990168px; 
+                    --start-y: 72.14940245665689px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.23466116382252s;
-                    animation-delay: 0.68380076023574s;
+                    animation-duration: 12.41579664336803s;
+                    animation-delay: 1.7611341937936467s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2839,13 +2839,13 @@
             <rect x="654" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -554.0188215571887px; 
-                    --start-y: -30.498153810152417px; 
+                    --start-x: -499.2734654209023px; 
+                    --start-y: 50.64017381439214px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.469606789152142s;
-                    animation-delay: 0.399482371751558s;
+                    animation-duration: 10.391789377238911s;
+                    animation-delay: 1.362068101957734s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2856,13 +2856,13 @@
             <rect x="654" y="72" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -520.588794486425px; 
-                    --start-y: -10.828616969661098px; 
+                    --start-x: -588.7165548774855px; 
+                    --start-y: -2.1002478589718834px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.743167462438194s;
-                    animation-delay: 0.06995449412711308s;
+                    animation-duration: 13.014172748503839s;
+                    animation-delay: 2.156950774286271s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2873,13 +2873,13 @@
             <rect x="654" y="86" width="10" height="10" rx="2" fill="#39d353" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -551.848084286537px; 
-                    --start-y: 33.5242038387847px; 
+                    --start-x: -529.6463500756054px; 
+                    --start-y: -23.56330854436036px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.009770182941988s;
-                    animation-delay: 0.10396855936032978s;
+                    animation-duration: 12.058995151067016s;
+                    animation-delay: 0.28840158928114257s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2890,13 +2890,13 @@
             <rect x="654" y="100" width="10" height="10" rx="2" fill="#26a641" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -566.5117533424035px; 
-                    --start-y: -57.3861536578998px; 
+                    --start-x: -500.27268452443894px; 
+                    --start-y: 0.3669272080567083px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 14.08905358294788s;
-                    animation-delay: 0.12102091590328834s;
+                    animation-duration: 10.403260527626731s;
+                    animation-delay: 1.0096791860040972s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2907,13 +2907,13 @@
             <rect x="654" y="114" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -590.7750403220125px; 
-                    --start-y: -47.466525246254434px; 
+                    --start-x: -642.6731607947512px; 
+                    --start-y: -69.94385994974408px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.852643800315937s;
-                    animation-delay: 2.3364438638142433s;
+                    animation-duration: 13.039635913653864s;
+                    animation-delay: 0.5023420396486692s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2924,13 +2924,13 @@
             <rect x="668" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -578.3652362044666px; 
-                    --start-y: 75.67776374411362px; 
+                    --start-x: -642.379545706696px; 
+                    --start-y: 62.84267262624627px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.936700541907435s;
-                    animation-delay: 2.806911423008585s;
+                    animation-duration: 10.82560518990141s;
+                    animation-delay: 2.03174859931986s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2941,13 +2941,13 @@
             <rect x="668" y="100" width="10" height="10" rx="2" fill="#006d32" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -609.1414535602325px; 
-                    --start-y: -64.06970276181937px; 
+                    --start-x: -478.7956314753258px; 
+                    --start-y: -8.82794407246574px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 9.934440755609634s;
-                    animation-delay: 1.2466482103588337s;
+                    animation-duration: 9.776544097537968s;
+                    animation-delay: 2.0101044644630823s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2958,13 +2958,13 @@
             <rect x="682" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -553.2351172761134px; 
-                    --start-y: 18.309134797444756px; 
+                    --start-x: -615.0678519263121px; 
+                    --start-y: 29.10893958914219px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.998486080440909s;
-                    animation-delay: 2.4825093555110085s;
+                    animation-duration: 11.625443903805253s;
+                    animation-delay: 2.1688089694494037s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2975,13 +2975,13 @@
             <rect x="696" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -628.5182283314757px; 
-                    --start-y: 35.76816812216396px; 
+                    --start-x: -632.398296916483px; 
+                    --start-y: 52.89287331367271px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.887218008703071s;
-                    animation-delay: 2.4877004298486707s;
+                    animation-duration: 14.391193798205576s;
+                    animation-delay: 1.2722225637144593s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -2992,13 +2992,13 @@
             <rect x="696" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -627.5901386521825px; 
-                    --start-y: 6.49403036512291px; 
+                    --start-x: -646.1451155974164px; 
+                    --start-y: 9.585944773701726px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.509106742325969s;
-                    animation-delay: 1.2514512901385137s;
+                    animation-duration: 13.008330043246163s;
+                    animation-delay: 0.3566167933483839s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -3009,13 +3009,13 @@
             <rect x="696" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -581.8766701343941px; 
-                    --start-y: 2.150685521226478px; 
+                    --start-x: -688.4432092745653px; 
+                    --start-y: -1.2542780489948484px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 10.937589494926035s;
-                    animation-delay: 1.3652263710310557s;
+                    animation-duration: 12.29299021845059s;
+                    animation-delay: 2.0936505252425874s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -3026,13 +3026,13 @@
             <rect x="710" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -632.8083368230375px; 
-                    --start-y: 30.07489621577176px; 
+                    --start-x: -670.7842983006288px; 
+                    --start-y: 27.345482878718684px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 12.04033678339857s;
-                    animation-delay: 2.5216227234300748s;
+                    animation-duration: 10.75520362908561s;
+                    animation-delay: 2.738318404274221s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -3043,13 +3043,13 @@
             <rect x="710" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -603.688083522978px; 
-                    --start-y: 44.75995648532978px; 
+                    --start-x: -587.0432483036426px; 
+                    --start-y: 19.933534183679228px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.102933548981323s;
-                    animation-delay: 0.5443055863517029s;
+                    animation-duration: 10.542143153465389s;
+                    animation-delay: 0.8990479404271456s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -3060,13 +3060,13 @@
             <rect x="710" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -537.6424492842182px; 
-                    --start-y: -16.625105986515564px; 
+                    --start-x: -535.6435201458796px; 
+                    --start-y: 47.727807967653675px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 14.166697168190842s;
-                    animation-delay: 2.9674016611517704s;
+                    animation-duration: 14.777644157837878s;
+                    animation-delay: 0.3475850361013695s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -3077,13 +3077,13 @@
             <rect x="710" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -596.3124631543683px; 
-                    --start-y: -42.46460306476147px; 
+                    --start-x: -576.5497175810422px; 
+                    --start-y: -35.518608360269084px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.966775914990917s;
-                    animation-delay: 2.6597497550273124s;
+                    animation-duration: 13.942127292599924s;
+                    animation-delay: 2.135401227503199s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -3094,13 +3094,13 @@
             <rect x="724" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -650.7832610726449px; 
-                    --start-y: 38.09330299744738px; 
+                    --start-x: -542.9224875260418px; 
+                    --start-y: -15.211558503210213px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 14.453594574753687s;
-                    animation-delay: 2.96964767496235s;
+                    animation-duration: 13.188222025890699s;
+                    animation-delay: 2.675560232194994s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -3111,13 +3111,13 @@
             <rect x="724" y="58" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -610.6166486182086px; 
-                    --start-y: -34.60037683089319px; 
+                    --start-x: -718.5009901953761px; 
+                    --start-y: 16.236146002638094px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.334318337819319s;
-                    animation-delay: 1.7883872086928374s;
+                    animation-duration: 14.37756527465487s;
+                    animation-delay: 1.449913974344154s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -3128,13 +3128,13 @@
             <rect x="724" y="72" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -690.0882526508134px; 
-                    --start-y: 7.474327642276123px; 
+                    --start-x: -557.0727338180262px; 
+                    --start-y: -47.04626849937824px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.491369173975485s;
-                    animation-delay: 1.04158769062082s;
+                    animation-duration: 12.138459975823295s;
+                    animation-delay: 1.1041943922221291s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -3145,13 +3145,13 @@
             <rect x="724" y="86" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -543.9191211372937px; 
-                    --start-y: 10.19968513767931px; 
+                    --start-x: -613.1927055168832px; 
+                    --start-y: -56.12100950547399px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 14.525954999383178s;
-                    animation-delay: 1.9303906992736528s;
+                    animation-duration: 12.120698060264186s;
+                    animation-delay: 0.04700204846916778s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -3162,13 +3162,13 @@
             <rect x="724" y="100" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -581.4634274107468px; 
-                    --start-y: -9.101083190016482px; 
+                    --start-x: -535.2526865171848px; 
+                    --start-y: -17.307185459572167px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 11.008490778142797s;
-                    animation-delay: 1.558938461111805s;
+                    animation-duration: 12.171361675218044s;
+                    animation-delay: 1.3488246113745306s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
@@ -3179,13 +3179,30 @@
             <rect x="738" y="30" width="10" height="10" rx="2" fill="#0e4429" class="box"
                 style="
                     /* Pass unique starting offsets to the shared keyframe via CSS variables */
-                    --start-x: -625.2844284304016px; 
-                    --start-y: 8.338182523472078px; 
+                    --start-x: -692.7342382884757px; 
+                    --start-y: 68.93120576933651px; 
 
                     /* Animation styles */
                     animation-name: diffusion-jump; /* All boxes use this single keyframe */
-                    animation-duration: 13.750115293038878s;
-                    animation-delay: 2.28697559461292s;
+                    animation-duration: 12.969201851420308s;
+                    animation-delay: 2.2702524040781036s;
+                    animation-fill-mode: forwards;
+                    /* Use steps() to create discrete jumps over the start-to-end path */
+                    animation-timing-function: steps(10, end); 
+                    animation-iteration-count: 1; /* Run once and stop at final position */
+                "
+            />
+            
+            <rect x="738" y="44" width="10" height="10" rx="2" fill="#0e4429" class="box"
+                style="
+                    /* Pass unique starting offsets to the shared keyframe via CSS variables */
+                    --start-x: -559.7409322968374px; 
+                    --start-y: 13.756719021598514px; 
+
+                    /* Animation styles */
+                    animation-name: diffusion-jump; /* All boxes use this single keyframe */
+                    animation-duration: 14.43092624730506s;
+                    animation-delay: 0.39630394579681993s;
                     animation-fill-mode: forwards;
                     /* Use steps() to create discrete jumps over the start-to-end path */
                     animation-timing-function: steps(10, end); 
